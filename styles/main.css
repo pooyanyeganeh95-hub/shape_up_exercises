@@ -100,17 +100,14 @@ aside a:focus {
 }
 
 footer {
-    font-size: 75%;
+    font-size: 75%; /* barik shodan footer */
     text-align: center;
     background-color: steelblue;
     color: white;
-    padding: 15px;
-    border-radius: 0;
-    width: calc(100% + 60px); /* az chap o rast be border box */
+    padding: 15px; /* barik shod */
+    margin-top: 0; /* kamtar shod */
+    border-radius: 5px;
     margin-left: -30px;
-    position: absolute; /* payin page */
-    bottom: 0;
-    left: 0;
-}
+    margin-right: -30px;
 
 }
