@@ -18,7 +18,7 @@ body {
 header {
     background: linear-gradient(to bottom, white, lightsteelblue);
     border-bottom: 3px solid steelblue;
-    padding: 10px 0; /* barik shodan header */
+    padding: 15px 0; /* header balatar shod */
     margin-bottom: 12px;
     width: calc(100% + 60px);
     margin-left: -30px;
@@ -27,21 +27,21 @@ header {
 
 header img {
     float: left;
-    margin-right: 15px; /* kamtar shod */
+    margin-right: 15px;
     margin-bottom: 10px;
-    max-height: 100px; /* barik shodan header */
+    max-height: 100px;
 }
 
 header h1 {
-    font-size: 250%; 
+    font-size: 280%; /* balatar shod */
     color: steelblue;
     font-style: italic;
-    margin-bottom: 5px; /* kamtar shod */
+    margin-bottom: 8px; /* balatar shod */
 }
 
 header h2 {
-    font-size: 120%; /* kam shod */
-    margin-bottom: 10px; /* kamtar shod */
+    font-size: 140%; /* balatar shod */
+    margin-bottom: 12px; /* balatar shod */
 }
 
 a {
@@ -59,34 +59,34 @@ section a:focus {
 }
 
 section {
-    margin-bottom: 30px; /* kam shod */
+    margin-bottom: 30px;
 }
 
 h1, h2, h3 {
-    margin-top: 15px; /* kamtar shod */
-    margin-bottom: 10px; /* kamtar shod */
+    margin-top: 20px; /* balatar shod */
+    margin-bottom: 12px; /* balatar shod */
 }
 
 section p {
-    margin-bottom: 10px; /* spacing kamtar */
-    line-height: 1.6; /* kamtar shod */
+    margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 aside {
     border: 3px solid steelblue;
     border-radius: 10px;
-    padding: 20px; /* kamtar shod */
-    margin-bottom: 30px; /* kamtar shod */
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
 aside h2 {
     color: maroon;
-    margin-bottom: 15px; /* kamtar shod */
+    margin-bottom: 15px;
 }
 
 aside ul li {
-    line-height: 1.8; /* kamtar shod */
-    margin-bottom: 8px; /* kamtar shod */
+    line-height: 1.8;
+    margin-bottom: 8px;
 }
 
 aside a:link,
@@ -100,12 +100,15 @@ aside a:focus {
 }
 
 footer {
-    font-size: 75%; /* barik shodan footer */
+    font-size: 75%;
     text-align: center;
     background-color: steelblue;
     color: white;
-    padding: 15px; /* barik shod */
-    margin-top: 30px; /* kamtar shod */
+    padding: 15px;
+    margin-top: 30px;
     border-radius: 5px;
-    margin-left: -30px;
+    width: calc(100% + 60px); /* full width be border box */
+    margin-left: -30px; /* jashb be chap */
+    position: relative;
+    bottom: 0; /* payin payin */
 }
