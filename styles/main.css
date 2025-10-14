@@ -1,116 +1,107 @@
-/* Reset selector: remove default margin/padding and use border-box */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling: width 700px per spec, centered, with border and shadow */
 body {
-    font-family: Arial, Helvetica, sans-serif; /* set font */
-    font-size: 100%; /* base font size */
-    width: 700px; /* exercise specification */
-    margin: 40px auto; /* center in browser */
-    border: 5px solid steelblue; /* outer border */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* shadow for 3D effect */
-    padding: 30px; /* internal spacing so text is readable */
-    background-color: #fff; /* background inside box */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 700px;
+    margin: 40px auto;
+    border: 5px solid steelblue;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    background-color: #fff;
 }
 
-/* Header styling: gradient background with bottom border */
 header {
-    background: linear-gradient(to bottom, white, lightsteelblue); /* gradient */
-    border-bottom: 3px solid steelblue; /* border below header */
-    padding: 20px 20px 40px 20px; /* spacing inside header */
-    margin-bottom: 40px; /* space below header */
+    background: linear-gradient(to bottom, white, lightsteelblue);
+    border-bottom: 3px solid steelblue;
+    padding: 20px 20px 40px 20px;
+    margin-bottom: 40px;
+    overflow: hidden; 
 }
 
-/* Header titles */
 header h1 {
-    font-size: 300%; /* main heading */
+    font-size: 300%;
     color: steelblue;
     font-style: italic;
-    margin-bottom: 20px; /* spacing below h1 */
+    margin-bottom: 20px;
 }
 
 header h2 {
-    font-size: 150%; /* subheading */
-    margin-bottom: 30px; /* spacing below h2 */
+    font-size: 150%;
+    margin-bottom: 30px;
 }
 
-/* Header image */
 header img {
-    float: left; /* image on left side */
-    margin-right: 30px; /* space between image and text */
-    margin-bottom: 20px; /* spacing below image */
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
 }
 
-/* Link styling */
 a {
-    font-weight: bold; /* emphasize links */
+    font-weight: bold;
 }
 
 section a:link,
 section a:visited {
-    color: maroon; /* default link color in section */
+    color: maroon;
 }
 
 section a:hover,
 section a:focus {
-    color: steelblue; /* hover/focus effect */
+    color: steelblue;
 }
 
-/* Section spacing */
 section {
-    margin-bottom: 50px; /* spacing between sections */
+    margin-bottom: 50px;
 }
 
 h1, h2, h3 {
-    margin-top: 25px; /* spacing above headings */
-    margin-bottom: 20px; /* spacing below headings */
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
-/* Paragraph styling */
 p {
-    margin-bottom: 20px; /* spacing between paragraphs */
-    line-height: 1.8; /* make text more readable */
+    margin-bottom: 20px;
+    line-height: 1.8;
 }
 
-/* Aside styling: rounded border with padding */
 aside {
-    border: 3px solid steelblue; /* border around aside */
-    border-radius: 10px; /* rounded corners */
-    padding: 25px; /* internal spacing for readability */
-    margin-bottom: 40px; /* spacing below aside */
+    border: 3px solid steelblue;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 40px;
 }
 
 aside h2 {
     color: maroon;
-    margin-bottom: 20px; /* spacing below heading */
+    margin-bottom: 20px;
 }
 
 aside ul li {
-    line-height: 2; /* spacing between list items */
+    line-height: 2;
     margin-bottom: 10px;
 }
 
 aside a:link,
 aside a:visited {
-    color: steelblue; /* link color in aside */
+    color: steelblue;
 }
 
 aside a:hover,
 aside a:focus {
-    color: maroon; /* hover/focus effect */
+    color: maroon;
 }
 
-/* Footer styling: steelblue background with white text */
 footer {
-    font-size: 80%; /* smaller font */
-    text-align: center; /* center text */
-    background-color: steelblue; /* background color */
-    color: white; /* text color */
-    padding: 20px; /* internal spacing */
-    margin-top: 40px; /* space above footer */
-    border-radius: 5px; /* slightly rounded corners */
+    font-size: 80%;
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
 }
