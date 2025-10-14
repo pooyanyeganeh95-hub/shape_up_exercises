@@ -6,23 +6,13 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
-    padding: 20px;
-}
-
-.main-container {
+    font-size: 100%;
     width: 700px;
+    margin: 40px auto;
     border: 5px solid steelblue;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     padding: 30px;
-    background-color: white;
-    margin: 0 auto;
+    background-color: #fff;
 }
 
 header {
@@ -30,13 +20,7 @@ header {
     border-bottom: 3px solid steelblue;
     padding: 15px 0;
     margin-bottom: 15px;
-    overflow: hidden;
-}
-
-header img {
-    float: left;
-    margin-right: 30px;
-    margin-bottom: 20px;
+    overflow: hidden; 
 }
 
 header h1 {
@@ -51,20 +35,36 @@ header h2 {
     margin-bottom: 30px;
 }
 
-main {
-    margin-bottom: 40px;
+header img {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+a {
+    font-weight: bold;
+}
+
+section a:link,
+section a:visited {
+    color: maroon;
+}
+
+section a:hover,
+section a:focus {
+    color: steelblue;
 }
 
 section {
     margin-bottom: 50px;
 }
 
-section h1, section h2, section h3 {
+h1, h2, h3 {
     margin-top: 25px;
     margin-bottom: 20px;
 }
 
-section p {
+p {
     margin-bottom: 20px;
     line-height: 1.8;
 }
@@ -86,10 +86,21 @@ aside ul li {
     margin-bottom: 10px;
 }
 
+aside a:link,
+aside a:visited {
+    color: steelblue;
+}
+
+aside a:hover,
+aside a:focus {
+    color: maroon;
+}
+
 footer {
+    font-size: 80%;
+    text-align: center;
     background-color: steelblue;
     color: white;
-    text-align: center;
     padding: 20px;
     margin-top: 40px;
     border-radius: 5px;
