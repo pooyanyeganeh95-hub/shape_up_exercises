@@ -36,12 +36,12 @@ header h1 {
     font-size: 250%; 
     color: steelblue;
     font-style: italic;
-    margin-bottom: -50px; 
+    margin-bottom: 0; 
 }
 
 header h2 {
     font-size: 120%; 
-    margin-bottom: -20px;
+    margin-bottom: 0;
 }
 
 a {
