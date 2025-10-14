@@ -105,7 +105,9 @@ footer {
     background-color: steelblue;
     color: white;
     padding: 15px; /* barik shod */
-    margin-top: 30px; /* kamtar shod */
+    margin-top: 0; /* kamtar shod */
     border-radius: 5px;
     margin-left: -30px;
+    margin-right: 30px;
+
 }
