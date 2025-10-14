@@ -36,12 +36,12 @@ header h1 {
     font-size: 250%; 
     color: steelblue;
     font-style: italic;
-    margin-bottom: 5px; /* kamtar shod */
+    margin-bottom: 20px; /* kamtar shod */
 }
 
 header h2 {
     font-size: 120%; /* kam shod */
-    margin-bottom: 10px; /* kamtar shod */
+    margin-bottom: 20px; /* kamtar shod */
 }
 
 a {
