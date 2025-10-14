@@ -21,6 +21,7 @@ header {
     padding: 15px 0;
     margin-bottom: 15px;
     overflow: hidden; 
+    width: 100%;
 }
 
 header h1 {
