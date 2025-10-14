@@ -8,45 +8,40 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     width: 700px;
-    margin: 0 auto;
+    margin: 40px auto;
     border: 5px solid steelblue;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-    background-color: #fff;
-    padding: 0;
-    position: relative;
-    min-height: 100vh;
-}
-
-.main-container {
     padding: 30px;
+    background-color: #fff;
 }
 
 header {
     background: linear-gradient(to bottom, white, lightsteelblue);
     border-bottom: 3px solid steelblue;
-    padding: 8px 0; /* header barik va matn ba balaye box */
+    padding: 10px 0; /* barik shodan header */
     margin-bottom: 12px;
     width: calc(100% + 60px);
+    margin-left: -30px;
     overflow: hidden;
 }
 
 header img {
     float: left;
-    margin-right: 15px;
-    margin-bottom: 5px;
-    max-height: 100px;
+    margin-right: 15px; /* kamtar shod */
+    margin-bottom: 10px;
+    max-height: 100px; /* barik shodan header */
 }
 
 header h1 {
-    font-size: 300%;
+    font-size: 250%; 
     color: steelblue;
     font-style: italic;
-    margin: 0 0 5px 0; /* balatar va ba balaye box */
+    margin-bottom: 5px; /* kamtar shod */
 }
 
 header h2 {
-    font-size: 150%;
-    margin: 0 0 8px 0;
+    font-size: 120%; /* kam shod */
+    margin-bottom: 10px; /* kamtar shod */
 }
 
 a {
@@ -64,34 +59,34 @@ section a:focus {
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* kam shod */
 }
 
 h1, h2, h3 {
-    margin-top: 10px;
-    margin-bottom: 8px;
+    margin-top: 15px; /* kamtar shod */
+    margin-bottom: 10px; /* kamtar shod */
 }
 
 section p {
-    margin-bottom: 10px;
-    line-height: 1.6;
+    margin-bottom: 10px; /* spacing kamtar */
+    line-height: 1.6; /* kamtar shod */
 }
 
 aside {
     border: 3px solid steelblue;
     border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 30px;
+    padding: 20px; /* kamtar shod */
+    margin-bottom: 30px; /* kamtar shod */
 }
 
 aside h2 {
     color: maroon;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* kamtar shod */
 }
 
 aside ul li {
-    line-height: 1.8;
-    margin-bottom: 8px;
+    line-height: 1.8; /* kamtar shod */
+    margin-bottom: 8px; /* kamtar shod */
 }
 
 aside a:link,
@@ -105,14 +100,12 @@ aside a:focus {
 }
 
 footer {
-    font-size: 75%;
+    font-size: 75%; /* barik shodan footer */
     text-align: center;
     background-color: steelblue;
     color: white;
-    padding: 15px;
+    padding: 15px; /* barik shod */
+    margin-top: 30px; /* kamtar shod */
     border-radius: 5px;
-    width: calc(100% + 60px);
-    position: absolute;
-    bottom: 0; /* payin page */
-    left: 0;
+    margin-left: -30px;
 }
