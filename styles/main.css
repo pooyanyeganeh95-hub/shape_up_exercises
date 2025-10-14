@@ -18,8 +18,8 @@ body {
 header {
     background: linear-gradient(to bottom, white, lightsteelblue);
     border-bottom: 3px solid steelblue;
-    padding: 20px 20px 40px 20px;
-    margin-bottom: 40px;
+    padding: 30px 30px 40px 30px;
+    margin-bottom: 30px;
     overflow: hidden; 
 }
 
