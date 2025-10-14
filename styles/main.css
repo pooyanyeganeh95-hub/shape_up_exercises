@@ -8,17 +8,23 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     width: 700px;
-    margin: 40px auto;
+    margin: 0 auto;
     border: 5px solid steelblue;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-    padding: 30px;
     background-color: #fff;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+.main-container {
+    padding: 30px;
 }
 
 header {
     background: linear-gradient(to bottom, white, lightsteelblue);
     border-bottom: 3px solid steelblue;
-    padding: 15px 0; /* header balatar shod */
+    padding: 8px 0; /* header barik va matn ba balaye box */
     margin-bottom: 12px;
     width: calc(100% + 60px);
     margin-left: -30px;
@@ -28,20 +34,20 @@ header {
 header img {
     float: left;
     margin-right: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     max-height: 100px;
 }
 
 header h1 {
-    font-size: 280%; /* balatar shod */
+    font-size: 300%;
     color: steelblue;
     font-style: italic;
-    margin-bottom: 8px; /* balatar shod */
+    margin: 0 0 5px 0; /* balatar va ba balaye box */
 }
 
 header h2 {
-    font-size: 140%; /* balatar shod */
-    margin-bottom: 12px; /* balatar shod */
+    font-size: 150%;
+    margin: 0 0 8px 0;
 }
 
 a {
@@ -63,8 +69,8 @@ section {
 }
 
 h1, h2, h3 {
-    margin-top: 20px; /* balatar shod */
-    margin-bottom: 12px; /* balatar shod */
+    margin-top: 10px;
+    margin-bottom: 8px;
 }
 
 section p {
@@ -105,10 +111,10 @@ footer {
     background-color: steelblue;
     color: white;
     padding: 15px;
-    margin-top: 30px;
     border-radius: 5px;
-    width: calc(100% + 60px); /* full width be border box */
-    margin-left: -30px; /* jashb be chap */
-    position: relative;
-    bottom: 0; /* payin payin */
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    position: absolute;
+    bottom: 0; /* payin page */
+    left: 0;
 }
