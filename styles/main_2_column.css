@@ -98,6 +98,14 @@ aside a:focus {
     color: maroon;
 }
 
+/* اصلاح ستون سمت راست */
+main aside:last-of-type {
+    margin-top: 5px;       /* فاصله از header */
+    padding-left: 5px;     /* فاصله متن از چپ ستون */
+    max-height: fit-content; /* ستون به اندازه محتوا باز باشه */
+    overflow: hidden;       /* اگه چیزی اضافه باشه، ستون بزرگ نشه */
+}
+
 footer {
     font-size: 75%; 
     text-align: center;
@@ -110,32 +118,3 @@ footer {
     margin-right: -30px;
     margin-bottom: -30px;
 }
-
-/* --------------------------
-   NEW: Flexbox for main
---------------------------- */
-main {
-    display: flex;
-    gap: 20px;
-}
-
-main section {
-    flex: 2; /* 2 برابر فضای aside */
-}
-
-main aside {
-    flex: 1; /* ستون های aside هم اندازه */
-}
-
-/* اگر بخوای بعداً ستون سوم اضافه بشه، فقط کافیه:
-main {
-    display: flex;
-    gap: 20px;
-}
-main section {
-    flex: 2;
-}
-main aside {
-    flex: 1;
-}
-*/
