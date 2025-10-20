@@ -9,9 +9,9 @@ body {
     font-size: 100%;
     width: 100%;
     margin: 0;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     padding: 30px;
     background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 header {
@@ -104,25 +104,26 @@ footer {
 main {
     display: flex;
     gap: 20px;
-    justify-content: space-between; /* ستون‌ها فاصله مناسب بگیرن */
+}
+
+
+main section {
+    flex: 2;
+    order: 2; 
 }
 
 main aside:first-of-type {
-    flex: 0.7; /* ستون چپ */
+    flex: 0.7;
+    order: 1; 
     padding-left: 15px;
     padding-top: 10px;
     align-self: flex-start;
-}
-
-main section {
-    flex: 2;      /* ستون وسطی بزرگتر */
-    margin: 0 auto; /* ستون وسطی وسط‌چین بشه */
 }
 
 main aside:last-of-type {
-    flex: 0.7; /* ستون راست */
+    flex: 0.7;
+    order: 3; 
     padding-left: 15px;
     padding-top: 10px;
     align-self: flex-start;
 }
-
