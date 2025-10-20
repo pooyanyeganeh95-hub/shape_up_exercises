@@ -35,13 +35,13 @@ header img {
 }
 
 header h1 {
-    font-size: 3.0vw; 
+    font-size: 2.5vw; 
     color: steelblue;
     font-style: italic;
 }
 
 header h2 {
-    font-size: 1.5vw; 
+    font-size: 1.25vw; 
     margin-bottom: auto;
 }
 a {
