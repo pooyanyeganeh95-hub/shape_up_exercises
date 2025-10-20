@@ -18,7 +18,7 @@ header {
     background: linear-gradient(to bottom, white, lightsteelblue);
     border-bottom: 3px solid steelblue;
     padding: 10px 0; 
-    margin-bottom: 0;
+    margin-bottom: 15px;
     width: calc(100% + 60px);
     margin-left: -30px;
     overflow: hidden;
@@ -38,12 +38,11 @@ header h1 {
     font-size: 4.0vw; 
     color: steelblue;
     font-style: italic;
-    margin-bottom: 0; 
 }
 
 header h2 {
     font-size: 2.0vw; 
-    margin-bottom: 0;
+    margin-bottom: auto;
 }
 a {
     font-weight: bold;
