@@ -74,7 +74,10 @@ aside h2 {
     color: maroon;
     margin-bottom: 15px;
 }
-
+aside h3 {
+    color:black;
+    margin-bottom: 15px;
+}
 aside ul li {
     line-height: 1;
     margin-bottom: 8px;
@@ -128,4 +131,5 @@ main aside:last-of-type {
     padding-left: 30px;
     padding-top: 10px;
     align-self: flex-start;
+   
 }
