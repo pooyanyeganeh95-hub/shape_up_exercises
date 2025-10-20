@@ -104,22 +104,25 @@ footer {
 main {
     display: flex;
     gap: 20px;
-}
-
-main section {
-    flex: 2; /* ستون وسطی بزرگتر */
+    justify-content: space-between; /* ستون‌ها فاصله مناسب بگیرن */
 }
 
 main aside:first-of-type {
-    flex: 0.7; /* ستون 2 */
+    flex: 0.7; /* ستون چپ */
     padding-left: 15px;
     padding-top: 10px;
     align-self: flex-start;
 }
 
+main section {
+    flex: 2;      /* ستون وسطی بزرگتر */
+    margin: 0 auto; /* ستون وسطی وسط‌چین بشه */
+}
+
 main aside:last-of-type {
-    flex: 0.7; /* ستون 3 */
+    flex: 0.7; /* ستون راست */
     padding-left: 15px;
     padding-top: 10px;
     align-self: flex-start;
 }
+
