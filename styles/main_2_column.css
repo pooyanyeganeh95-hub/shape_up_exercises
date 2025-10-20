@@ -6,61 +6,93 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1vw;
+    font-size: 1.2vw;
     width: 100%;
     margin: 0;
     padding: 20px;
+    background-color: #fff;
 }
 
 header {
     background: linear-gradient(to bottom, white, lightsteelblue);
-    padding: 10px;
+    border-bottom: 3px solid steelblue;
+    padding: 10px 20px; 
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header img {
-    max-width: 120px;
-    min-width: 100px;
+    width: clamp(100px, 15%, 120px);
+    height: auto;
     margin-right: 15px;
 }
 
 header h1 {
+    font-size: 3vw;
     color: steelblue;
-    font-size: 2.5vw;
     font-style: italic;
 }
 
 header h2 {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 
 main {
     display: flex;
+    gap: 2%;
+    margin-top: 20px;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 section {
-    flex: 3 1 60%;
+    flex: 0 0 65%;
+    margin-bottom: 20px;
+}
+
+section h1, section h2, section h3 {
+    margin-bottom: 10px;
+}
+
+section p, section blockquote {
+    margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 aside {
-    flex: 1 1 35%;
-    border: 2px solid steelblue;
-    padding: 15px;
-    border-radius: 8px;
+    flex: 0 0 30%;
+    border: 3px solid steelblue;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 aside h2 {
     color: maroon;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+aside ul li {
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+aside a {
+    color: steelblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: maroon;
 }
 
 footer {
+    font-size: 0.9vw;
     text-align: center;
     background-color: steelblue;
     color: white;
-    padding: 10px;
+    padding: 15px;
     margin-top: 20px;
+    border-radius: 0;
 }
