@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2vw; /* فونت نسبت به viewport */
+    font-size: 1.2vw; 
     width: 100%;
     margin: 0;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
@@ -35,14 +35,14 @@ header img {
 }
 
 header h1 {
-    font-size: 2.5vw; 
+    font-size: 4.0vw; 
     color: steelblue;
     font-style: italic;
     margin-bottom: 0; 
 }
 
 header h2 {
-    font-size: 1.2vw; 
+    font-size: 2.0vw; 
     margin-bottom: 0;
 }
 
@@ -62,7 +62,7 @@ section a:focus {
 
 section {
     margin-bottom: 30px;
-    padding: 10px; /* فاصله داخلی متن */
+    padding: 10px; 
 }
 
 h1, h2, h3 {
