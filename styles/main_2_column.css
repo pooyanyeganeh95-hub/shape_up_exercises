@@ -98,12 +98,10 @@ aside a:focus {
     color: maroon;
 }
 
-/* اصلاح ستون سمت راست */
+/* تغییرات ستون سمت راست */
 main aside:last-of-type {
     margin-top: 5px;       /* فاصله از header */
     padding-left: 5px;     /* فاصله متن از چپ ستون */
-    max-height: fit-content; /* ستون به اندازه محتوا باز باشه */
-    overflow: hidden;       /* اگه چیزی اضافه باشه، ستون بزرگ نشه */
 }
 
 footer {
@@ -114,7 +112,4 @@ footer {
     padding: 15px; 
     margin-top: 0; 
     border-radius: 0;
-    margin-left: -30px;
-    margin-right: -30px;
-    margin-bottom: -30px;
-}
+    margi
