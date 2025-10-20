@@ -123,11 +123,11 @@ main section {
 }
 
 main aside {
-    flex: 1; 
+    flex: 0.7; 
 }
 main aside:last-of-type {
     margin-top: 20px;
-    padding-left: 15px;
+    padding-left: 30px;
     padding-top: 10px;
     align-self: flex-start;
 }
