@@ -45,7 +45,7 @@ header h2 {
 .navbar {
     width: 100%;
     background-color: steelblue;
-    margin-top: 10px;
+    margin-top: 0;
     overflow: hidden;
 }
 
