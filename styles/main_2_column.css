@@ -46,7 +46,7 @@ header h2 {
     width: 100%;
     background-color: steelblue;
     margin-top: 0;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .menu {
