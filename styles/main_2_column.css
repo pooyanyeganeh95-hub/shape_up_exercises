@@ -7,130 +7,147 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2vw; 
-    width: 100%;
-    margin: 0;
-    padding: 30px;
+    line-height: 1.6;
     background-color: #fff;
+    padding: 15px;
 }
 
+/* Header */
 header {
     background: linear-gradient(to bottom, white, lightsteelblue);
     border-bottom: 3px solid steelblue;
-    padding: 0px 0;
-    margin-bottom: 15px;
-    overflow: visible;
+    padding: 15px;
+    text-align: center;
+    position: relative;
 }
 
 header img {
-    float: left;
-    margin-right: 15px;
-    max-width: 120px;
+    max-width: 100px;
+    margin-bottom: 10px;
 }
 
 header h1 {
-    font-size: 2.5vw;
+    font-size: 1.8rem;
     color: steelblue;
     font-style: italic;
 }
 
 header h2 {
-    font-size: 1.25vw;
-    margin-bottom: auto;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
-/* --------------------------
-   Navbar
----------------------------*/
-.navbar {
-    width: 100%;
+/* Hamburger Menu (Mobile Only) */
+.hamburger {
+    display: block;
+    font-size: 1.8rem;
+    color: white;
     background-color: steelblue;
-    margin-top: 30px;
-    overflow: visible;
+    padding: 8px 12px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Navbar - Mobile First (Dropdown) */
+.navbar {
+    background-color: steelblue;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    position: relative;
+    z-index: 999;
+}
+
+.navbar.open {
+    max-height: 500px; /* کافی برای نمایش همه آیتم‌ها */
 }
 
 .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     list-style: none;
+    padding: 10px 0;
 }
 
-.menu li {
-    position: relative;
+.menu > li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .menu a {
     display: block;
-    padding: 10px 15px;
+    padding: 12px 20px;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    text-align: center;
 }
 
-/* hover */
-.menu a:hover {
-    font-style: italic;
-}
-
-/* current page */
 .menu a.current {
-    border: 2px solid white;
-    border-radius: 10px;
-    font-style: normal;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin: 5px 15px;
 }
 
-/* submenu */
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Submenu */
 .submenu {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: steelblue;
-    list-style: none;
-    min-width: 180px;
-    z-index: 10;
+    background-color: #2c3e50;
+    padding-left: 20px;
 }
 
-.menu li:hover .submenu {
+.menu li:hover .submenu,
+.menu li:focus-within .submenu {
     display: block;
 }
 
 .submenu a {
-    padding: 8px 12px;
-    white-space: nowrap;
+    padding: 8px 15px;
+    font-weight: normal;
+    font-size: 0.95rem;
 }
 
-/* Main content */
+/* Main Content - Mobile First (Stacked) */
 main {
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    align-items: flex-start;
+    margin-top: 20px;
+}
+
+main section,
+main aside {
+    width: 100%;
+    padding: 15px;
 }
 
 main section {
-    flex: 2;
-    margin-bottom: 30px;
-    padding: 10px;
+    order: 1;
 }
 
 main aside {
-    flex: 0.7;
+    order: 2;
     border: 3px solid steelblue;
     border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 30px;
+    background-color: #f9f9f9;
 }
 
 main aside h2 {
     color: maroon;
     margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+main aside ul {
+    list-style: none;
 }
 
 main aside ul li {
-    margin-bottom: 8px;
-    line-height: 1.2;
+    margin-bottom: 10px;
 }
 
 main aside a {
@@ -140,13 +157,123 @@ main aside a {
 
 main aside a:hover {
     color: maroon;
+    text-decoration: underline;
 }
 
 /* Footer */
 footer {
-    font-size: 0.75vw;
     text-align: center;
     background-color: steelblue;
     color: white;
     padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* ====================================
+   MEDIA QUERIES - Desktop First? NO!
+   MOBILE-FIRST: فقط برای بزرگ‌ترها اضافه کن
+   ==================================== */
+
+/* Tablet & Up: Horizontal Menu */
+@media (min-width: 600px) {
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        max-height: none;
+        background-color: steelblue;
+        display: block;
+    }
+
+    .navbar.open {
+        max-height: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .menu > li {
+        border-bottom: none;
+        position: relative;
+    }
+
+    .menu a {
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .menu a.current {
+        border: 2px solid white;
+        border-radius: 10px;
+        margin: 0;
+    }
+
+    /* Submenu on Hover (Desktop) */
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: steelblue;
+        min-width: 180px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        z-index: 10;
+    }
+
+    .menu li:hover .submenu {
+        display: block;
+    }
+
+    .submenu a {
+        padding: 10px 15px;
+        white-space: nowrap;
+    }
+}
+
+/* Desktop: Two Columns */
+@media (min-width: 900px) {
+    header {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    header img {
+        margin: 0;
+        max-width: 120px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    main section {
+        flex: 2;
+        order: 1;
+    }
+
+    main aside {
+        flex: 0.7;
+        order: 2;
+    }
 }
