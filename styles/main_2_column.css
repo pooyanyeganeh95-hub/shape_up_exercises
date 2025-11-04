@@ -14,6 +14,7 @@ body {
 /* ---------- HEADER ---------- */
 header {
   background: linear-gradient(to bottom, white, lightsteelblue);
+  border-bottom: 3px solid steelblue;
   padding: 10px;
 }
 
