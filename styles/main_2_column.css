@@ -1,4 +1,4 @@
-/* ==== ریست و پایه (Mobile-First) ==== */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,186 +6,149 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw; 
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    background-color: #fff;
 }
 
-/* ==== هدر ==== */
 header {
-    background: linear-gradient(to bottom, #8EB4E3, #FFFFFF);
-    padding: 15px;
-    text-align: center;
+    background: linear-gradient(to bottom, white, lightsteelblue);
+    border-bottom: 3px solid steelblue;
+    padding: 0px 0;
+    margin-bottom: 15px;
+    overflow: visible;
+}
+
+header img {
+    float: left;
+    margin-right: 15px;
+    max-width: 120px;
+}
+
+header h1 {
+    font-size: 2.5vw;
+    color: steelblue;
+    font-style: italic;
+}
+
+header h2 {
+    font-size: 1.25vw;
+    margin-bottom: auto;
+}
+
+/* --------------------------
+   Navbar
+---------------------------*/
+.navbar {
+    width: 100%;
+    background-color: steelblue;
+    margin-top: 30px;
+    overflow: visible;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.menu li {
     position: relative;
 }
 
-.logo {
-    width: 80px;
-    height: auto;
-    float: left;
-    margin-right: 15px;
-}
-
-.header-text {
-    display: inline-block;
-    text-align: left;
-    margin-top: 10px;
-}
-
-.header-text h1 {
-    font-size: 1.8em;
-    margin: 0;
-    color: #003366;
-}
-
-.header-text p {
-    font-size: 1em;
-    color: #444;
-    margin: 5px 0 0;
-}
-
-/* ==== منوی Dropdown (موبایل) ==== */
-.nav-dropdown {
-    margin-top: 15px;
+.menu a {
     display: block;
-}
-
-.nav-dropdown select {
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    background-color: #3399CC;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-/* ==== منوی افقی (دسکتاپ - مخفی در موبایل) ==== */
-.nav-horizontal {
-    display: none;
-    background-color: #3399CC;
-    padding: 10px 0;
-    margin-top: 15px;
-}
-
-.nav-horizontal ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.nav-horizontal li {
-    margin: 0 10px;
-}
-
-.nav-horizontal a {
+    padding: 10px 15px;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
+    text-align: center;
 }
 
-.nav-horizontal a:hover {
-    text-decoration: underline;
+/* hover */
+.menu a:hover {
+    font-style: italic;
 }
 
-/* ==== محتوا و سایدبار ==== */
-.container {
-    padding: 20px;
+/* current page */
+.menu a.current {
+    border: 2px solid white;
+    border-radius: 10px;
+    font-style: normal;
 }
 
+/* submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: steelblue;
+    list-style: none;
+    min-width: 180px;
+    z-index: 10;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    padding: 8px 12px;
+    white-space: nowrap;
+}
+
+/* Main content */
 main {
-    width: 100%;
-    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
 }
 
-main h2 {
-    color: #003366;
+main section {
+    flex: 2;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+main aside {
+    flex: 0.7;
+    border: 3px solid steelblue;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+main aside h2 {
+    color: maroon;
     margin-bottom: 15px;
 }
 
-main ul {
-    margin-left: 20px;
-}
-
-aside {
-    background-color: #E6F2FF;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-aside h3 {
-    margin-bottom: 10px;
-    color: #003366;
-}
-
-aside ul {
-    list-style: none;
-}
-
-aside li {
+main aside ul li {
     margin-bottom: 8px;
+    line-height: 1.2;
 }
 
-/* ==== فوتر ==== */
+main aside a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+main aside a:hover {
+    color: maroon;
+}
+
+/* Footer */
 footer {
-    background-color: #3399CC;
-    color: white;
+    font-size: 0.75vw;
     text-align: center;
+    background-color: steelblue;
+    color: white;
     padding: 15px;
-    font-size: 0.9em;
 }
 
-/* ==== Media Queries ==== */
 
-/* تبلت و دسکتاپ کوچک (حداقل 600px) */
-@media (min-width: 600px) {
-    .container {
-        display: flex;
-        gap: 20px;
-    }
-
-    main {
-        flex: 3;
-    }
-
-    aside {
-        flex: 1;
-    }
-}
-
-/* دسکتاپ بزرگ (حداقل 768px) - منوی افقی + سایدبار راست */
-@media (min-width: 768px) {
-    header {
-        text-align: left;
-    }
-
-    .logo {
-        margin-left: 20px;
-    }
-
-    .header-text {
-        margin-left: 10px;
-    }
-
-    /* مخفی کردن dropdown */
-    .nav-dropdown {
-        display: none;
-    }
-
-    /* نمایش منوی افقی */
-    .nav-horizontal {
-        display: block;
-    }
-
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    main {
-        margin-bottom: 0;
-    }
-}
