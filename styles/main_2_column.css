@@ -11,30 +11,39 @@ body {
   padding: 20px;
 }
 
-/* Header */
+/* ---------- HEADER ---------- */
 header {
   background: linear-gradient(to bottom, white, lightsteelblue);
   border-bottom: 3px solid steelblue;
   padding: 10px;
-  text-align: center;
 }
 
-header img {
+/* logo + text in one row */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header-top img {
   max-width: 120px;
+  height: auto;
 }
 
-header h1 {
+.header-text h1 {
   color: steelblue;
   font-style: italic;
-  margin-top: 5px;
+  font-size: 2rem;
 }
 
-header h2 {
+.header-text h2 {
   font-size: 1rem;
   color: #333;
 }
 
-/* ---------- Mobile-first Navbar ---------- */
+/* ---------- NAVBAR ---------- */
 .navbar {
   margin-top: 15px;
 }
@@ -47,6 +56,13 @@ header h2 {
   font-size: 1.1rem;
   border-radius: 6px;
   cursor: pointer;
+  display: inline-block;
+  text-align: left;
+}
+
+/* move hamburger to left (not centered) */
+.navbar {
+  text-align: left;
 }
 
 .menu {
@@ -93,7 +109,7 @@ header h2 {
   font-size: 0.95rem;
 }
 
-/* ---------- Main ---------- */
+/* ---------- MAIN ---------- */
 main {
   display: flex;
   flex-direction: column;
@@ -101,7 +117,7 @@ main {
   margin-top: 20px;
 }
 
-main section {
+section {
   flex: 1;
 }
 
@@ -109,6 +125,8 @@ aside {
   border: 3px solid steelblue;
   border-radius: 10px;
   padding: 15px;
+  width: fit-content; /* ✅ only as wide as content */
+  max-width: 100%; /* prevents overflow on small screens */
 }
 
 aside h2 {
@@ -125,7 +143,7 @@ aside a:hover {
   color: maroon;
 }
 
-/* Footer */
+/* ---------- FOOTER ---------- */
 footer {
   text-align: center;
   background-color: steelblue;
@@ -135,9 +153,9 @@ footer {
   margin-top: 30px;
 }
 
-/* ---------- Media Queries ---------- */
+/* ---------- MEDIA QUERIES ---------- */
 
-/* For medium screens (show two columns) */
+/* Two-column layout */
 @media (min-width: 768px) {
   main {
     flex-direction: row;
@@ -147,18 +165,16 @@ footer {
     flex: 2;
   }
   aside {
-    flex: 1;
+    flex: 0 0 auto;
   }
 }
 
-/* For large screens (horizontal menu) */
+/* Large screen: horizontal menu */
 @media (min-width: 992px) {
-  header {
-    text-align: left;
-  }
   .menu-toggle {
     display: none;
   }
+
   .menu {
     display: flex;
     flex-direction: row;
@@ -166,21 +182,25 @@ footer {
     background-color: steelblue;
     border-radius: 0;
   }
+
   .menu li {
     border: none;
     position: relative;
   }
+
   .submenu {
     position: absolute;
     top: 100%;
     left: 0;
     display: none;
-    border-radius: 0 0 6px 6px;
     min-width: 180px;
+    border-radius: 0 0 6px 6px;
   }
+
   .menu li:hover .submenu {
     display: block;
   }
+
   .submenu a {
     background-color: steelblue;
   }
