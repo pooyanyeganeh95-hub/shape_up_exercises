@@ -91,7 +91,10 @@ main {
 
 section { flex: 1; }
 
-section h1 { color: steelblue; margin-bottom: 10px; }
+section h1 {
+  color: black; /* عنوان مشکی */
+  margin-bottom: 10px;
+}
 
 section h2 { color: maroon; margin: 16px 0 8px; }
 
@@ -113,6 +116,26 @@ aside ul { list-style-type: none; padding-left: 0; }
 
 aside a { color: steelblue; text-decoration: none; }
 aside a:hover { color: maroon; }
+
+/* لینک ایمیل و شماره تلفن */
+.email-link {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.phone-link {
+  color: steelblue;
+  text-decoration: none;
+}
+
+.phone-link:hover {
+  text-decoration: underline;
+}
 
 /* ---------- FOOTER ---------- */
 footer {
