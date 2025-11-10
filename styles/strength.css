@@ -1,0 +1,219 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background: linear-gradient(to bottom, white, lightsteelblue);
+  border-bottom: 3px solid steelblue;
+  padding: 10px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header-top img {
+  max-width: 120px;
+  height: auto;
+}
+
+.header-text h1 {
+  color: steelblue;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.header-text h2 {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  margin-top: 15px;
+}
+
+.menu-toggle {
+  background-color: steelblue;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  background-color: steelblue;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.menu.open {
+  display: flex;
+}
+
+.menu li {
+  border-bottom: 1px solid #fff;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu a:hover,
+.menu a.current {
+  background-color: #4682b4;
+  border-bottom: 2px solid white;
+}
+
+/* Submenu */
+.submenu {
+  display: none;
+  background-color: #4682b4;
+  list-style: none;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu a {
+  padding-left: 20px;
+  font-size: 0.95rem;
+}
+
+/* ---------- MAIN ---------- */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+section {
+  flex: 1;
+}
+
+section h1 {
+  color: steelblue;
+  margin-bottom: 10px;
+}
+
+section h2 {
+  color: maroon;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+section ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+aside {
+  border: 3px solid steelblue;
+  border-radius: 10px;
+  padding: 15px;
+  width: fit-content;
+  max-width: 100%;
+}
+
+aside h2 {
+  color: maroon;
+  margin-bottom: 10px;
+}
+
+aside ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+aside a {
+  color: steelblue;
+  text-decoration: none;
+}
+
+aside a:hover {
+  color: maroon;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  background-color: steelblue;
+  color: white;
+  padding: 15px;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  section {
+    flex: 2;
+  }
+  aside {
+    flex: 0 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: steelblue;
+    border-radius: 0;
+  }
+
+  .menu li {
+    border: none;
+    position: relative;
+  }
+
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    min-width: 180px;
+    border-radius: 0 0 6px 6px;
+  }
+
+  .menu li:hover .submenu {
+    display: block;
+  }
+
+  .submenu a {
+    background-color: steelblue;
+  }
+}
