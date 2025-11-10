@@ -1,15 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shape Up! | Strength Training</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shape Up! | Strength Training</title>
+  <link rel="shortcut icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="../styles/strength.css">
 </head>
 
 <body>
-	<main>
-	    <h1>Strength Training</h1>
-		<h2>Under Construction</h2>
-	</main>
+<header>
+  <div class="header-top">
+    <a href="../index_2_column.html">
+      <img src="../images/shape_up_logo.png" alt="Shape Up Logo" width="150">
+    </a>
+    <div class="header-text">
+      <h1>Shape Up!</h1>
+      <h2>Find the best fit for you</h2>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <button class="menu-toggle">☰ Menu</button>
+    <ul class="menu">
+      <li><a href="../index_2_column.html">Home</a></li>
+      <li><a href="#" class="current">Strength Training</a></li>
+      <li><a href="../cardio/cardio.html">Cardio Exercises</a></li>
+      <li>
+        <a href="#">Stress Relief ▼</a>
+        <ul class="submenu">
+          <li><a href="../stress/stress.html">What is Stress?</a></li>
+          <li><a href="../stress/tips.html">5 Helpful Tips</a></li>
+          <li><a href="#">Meditation</a></li>
+          <li><a href="#">Vipassana</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Healthy Diets ▼</a>
+        <ul class="submenu">
+          <li><a href="#">Why a Healthy Diet?</a></li>
+          <li><a href="#">Plan Your Meals</a></li>
+          <li><a href="#">Count Your Calories</a></li>
+          <li><a href="#">Calculate Your BMI</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h1>Strength Training</h1>
+    <p>Strength training, also known as resistance training, helps you build muscle strength and endurance. You can use free weights, resistance bands, or even your own body weight to perform these exercises.</p>
+
+    <h2>Benefits of Strength Training</h2>
+    <ul>
+      <li>Increases muscle mass and bone density</li>
+      <li>Improves posture and flexibility</li>
+      <li>Boosts metabolism and burns calories</li>
+      <li>Reduces stress and promotes better sleep</li>
+    </ul>
+
+    <h2>Tips for Beginners</h2>
+    <p>Start slow, focus on your form, and rest between sessions. Remember that consistency is the key to seeing results. Don’t forget to warm up before and stretch after your workout.</p>
+
+    <p>
+      Contact us anytime!
+      Email us at <a href="mailto:info@shapeup.com">info@shapeup.com</a>
+      or call us at <a href="tel:123-456-7890">123-456-7890</a>.
+    </p>
+  </section>
+
+  <aside>
+    <h2>Additional Resources</h2>
+    <ul>
+      <li><a href="https://www.cdc.gov/physical-activity-basics/benefits/index.html">Physical activity and health</a></li>
+      <li><a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/flexibility-exercise-stretching">Stretching exercises</a></li>
+      <li><a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/strength-and-resistance-training-exercise">Strength training</a></li>
+      <li><a href="https://www.health.harvard.edu/exercise-and-fitness/interval-training-for-a-stronger-heart">Cardiovascular training</a></li>
+      <li><a href="https://www.self.com/gallery/power-yoga-workout">Yoga workout</a></li>
+    </ul>
+  </aside>
+</main>
+
+<footer>
+  <p>&copy; Shape Up!</p>
+</footer>
+
+<script>
+  // Toggle menu for mobile
+  document.querySelector('.menu-toggle').addEventListener('click', () => {
+    document.querySelector('.menu').classList.toggle('open');
+  });
+</script>
+
 </body>
 </html>
