@@ -117,16 +117,17 @@ aside ul { list-style-type: none; padding-left: 0; }
 aside a { color: steelblue; text-decoration: none; }
 aside a:hover { color: maroon; }
 
-/* لینک ایمیل و شماره تلفن قرمز */
-.contact-link {
-  color: #b30000; /* قرمز اصلی */
-  font-weight: bold;
+/* ایمیل و تلفن فقط با رنگ قرمز سایت */
+.email-link,
+.phone-link {
+  color: maroon; /* قرمز اصلی سایت */
   text-decoration: none;
 }
 
-.contact-link:hover {
-  color: #ff0000; /* قرمز روشن هنگام hover */
+.email-link:hover,
+.phone-link:hover {
   text-decoration: underline;
+  color: maroon; 
 }
 
 /* ---------- FOOTER ---------- */
