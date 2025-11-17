@@ -126,7 +126,7 @@ aside ul {
 /* INJAAA: esm file icon ro avaz kon be esm vagheii
    masalan: stress_icon.png ya bullet.png ya ... */
 aside li {
-  background: url("../images/ICON_FILENAME.png") no-repeat left 4px;
+  background: url("images/stress.jpg") no-repeat left 4px;
   padding-left: 28px;  /* ja baraye icon */
   margin-bottom: 8px;
 }
