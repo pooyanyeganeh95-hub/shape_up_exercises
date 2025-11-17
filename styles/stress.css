@@ -1,0 +1,115 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+/* import custom font */
+@font-face {
+  font-family: "AmericanCaptain";
+  src: url("../fonts/American Captain.ttf") format("truetype");
+}
+
+/* header */
+header {
+  background: linear-gradient(to bottom, white, lightsteelblue);
+  border-bottom: 3px solid steelblue;
+  padding: 10px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-text h1 {
+  font-family: "AmericanCaptain", sans-serif;
+  font-size: 2.5rem;
+  color: steelblue;
+  letter-spacing: 1px;
+}
+
+/* main layout */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+section {
+  flex: 2;
+}
+
+/* figure alignment */
+.stress-figure {
+  float: left;
+  margin: 0 20px 15px 0;
+  max-width: 250px;
+  text-align: center;
+}
+
+.stress-figure img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.stress-figure figcaption {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+/* aside */
+aside {
+  border: 3px solid steelblue;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+aside h2 {
+  color: maroon;
+  margin-bottom: 10px;
+}
+
+/* icons before li (using background-image) */
+aside li,
+main ul li {
+  list-style: none;
+  padding-left: 28px;
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+  margin-bottom: 10px;
+}
+
+aside li {
+  background-image: url("../images/check_icon.png");
+}
+
+main ul li {
+  background-image: url("../images/bullet_icon.png");
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: steelblue;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* two-column on larger screens */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+}
