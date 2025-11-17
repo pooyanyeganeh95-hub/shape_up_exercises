@@ -205,3 +205,17 @@ footer {
     background-color: steelblue;
   }
 }
+/* ---------- ASIDE LIST ICONS FOR HOME PAGE ---------- */
+
+aside ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* INJAAA ham esm icon ro avaz kon be file vagheii
+   chon masir az index_2_column.html hast, images/.. lazeme */
+aside li {
+  background: url("images/stress.jpg") no-repeat left 4px;
+  padding-left: 28px;   /* jaye matn ba'd az icon */
+  margin-bottom: 8px;
+}
