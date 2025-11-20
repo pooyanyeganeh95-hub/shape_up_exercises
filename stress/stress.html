@@ -2,13 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta-name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stress Relief | Shape Up</title>
 
   <link rel="shortcut icon" href="../images/favicon.ico">
-  <!-- استایل عمومی سایت (همون که برای homepage استفاده می‌کنی) -->
   <link rel="stylesheet" href="../styles/main_2_column.css">
-  <!-- استایل مخصوص صفحه استرس -->
   <link rel="stylesheet" href="../styles/stress.css">
 </head>
 <body>
@@ -16,14 +14,14 @@
 <header>
   <div class="header-top">
     <img src="../images/shape_up_logo.png" alt="Shape Up Logo" width="150">
+
     <div class="header-text">
-      <!-- این تیتر با فونت American Captain نمایش داده می‌شود -->
-      <h1>Stress Relief</h1>
+      <!-- تغییر شماره 5 → تبدیل به SHAPE UP! -->
+      <h1>Shape Up!</h1>
       <h2>Find the best fit for you</h2>
     </div>
   </div>
 
-  <!-- همون navigation مثل صفحه اصلی، فقط با مسیرهای نسبی درست -->
   <nav class="navbar">
     <button class="menu-toggle">☰ Menu</button>
     <ul class="menu">
@@ -39,6 +37,7 @@
           <li><a href="vipassana.html">Vipassana</a></li>
         </ul>
       </li>
+
       <li>
         <a href="#">Healthy Diets ▼</a>
         <ul class="submenu">
@@ -48,48 +47,66 @@
           <li><a href="#">Calculate Your BMI</a></li>
         </ul>
       </li>
+
     </ul>
   </nav>
 </header>
 
 <main>
+
   <section>
-    <h2>We all encounter stress</h2>
+
+    <!-- تغییر شماره 1 -->
+    <h2 class="black-title">Stress Relief</h2>
+
     <p>We all encounter stress at one time or another. So it's important to be able to recognize stress and learn how to deal with it.</p>
 
-    <h2>What is stress?</h2>
+    <!-- تغییر شماره 2 -->
+    <h2 class="maroon-title">What is stress?</h2>
 
-    <!-- FIGURE مطابق تمرین: تصویر + کپشن، هم‌تراز با بالای پاراگراف -->
     <figure class="stress-figure">
       <img src="../images/stress.jpg" alt="Managing stress">
-      <figcaption>Managing stress is essential for your well-being.</figcaption>
+
+      <!-- تغییر شماره 5 -->
+      <figcaption>
+        Stress can come from work, family, or health problems.
+        <hr class="caption-line">
+      </figcaption>
+
     </figure>
 
     <p>Stress is the feeling that people have when they are overloaded and struggling to cope with demands. Anything that poses a real or perceived challenge or threat to a person's well-being can cause stress.</p>
 
     <p>Stress can also be a motivator. It can be essential to survival. The "fight-or-flight" mechanism helps us know when and how to respond to danger. But when this mechanism is triggered too easily, or when there are too many stressors at one time, it can become harmful to a person's mental and physical health.</p>
 
-    <h2>How to manage your stress</h2>
+    <!-- تغییر شماره 3 -->
+    <h2 class="maroon-title">How to manage your stress</h2>
+
     <p>To help manage stress, try the following:</p>
 
-    <ul>
+    <!-- تغییر شماره 6 (indent + space) -->
+    <ul class="indented-list">
       <li>Take a break from what you're doing</li>
       <li>Exercise on a regular basis</li>
       <li>Take time to smile and laugh</li>
       <li>Get support from family and friends</li>
       <li>Meditate</li>
     </ul>
+
   </section>
 
+  <!-- تغییر شماره 4: تبدیل aside به Additional Resources + آیکون‌ها -->
   <aside>
-    <h2>More Stress Tips</h2>
-    <ul>
-      <li><a href="stress.html">What is Stress?</a></li>
-      <li><a href="tips.html">5 Helpful Tips</a></li>
-      <li><a href="meditate.html">Meditation</a></li>
-      <li><a href="vipassana.html">Vipassana</a></li>
+    <h2>Additional Resources</h2>
+    <ul class="resource-list">
+      <li><a href="https://www.cdc.gov/physical-activity-basics/benefits/index.html">Physical activity and health</a></li>
+      <li><a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/flexibility-exercise-stretching">Stretching exercises</a></li>
+      <li><a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/strength-and-resistance-training-exercise">Strength training</a></li>
+      <li><a href="https://www.health.harvard.edu/exercise-and-fitness/interval-training-for-a-stronger-heart">Cardiovascular training</a></li>
+      <li><a href="https://www.self.com/gallery/power-yoga-workout">Yoga workout</a></li>
     </ul>
   </aside>
+
 </main>
 
 <footer>
@@ -97,10 +114,10 @@
 </footer>
 
 <script>
-  // Mobile menu toggle (مثل صفحه اصلی)
-  document.querySelector('.menu-toggle').addEventListener('click', () => {
-    document.querySelector('.menu').classList.toggle('open');
-  });
+  document.querySelector('.menu-toggle')
+    .addEventListener('click', () =>
+      document.querySelector('.menu').classList.toggle('open')
+  );
 </script>
 
 </body>
