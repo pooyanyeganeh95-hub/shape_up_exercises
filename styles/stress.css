@@ -127,11 +127,58 @@ p{
   padding-left:0;
 }
 
-.resource-list li {
-  background:url("../images/physical.png") no-repeat left 4px;
-  padding-left:32px;
-  margin-bottom:10px;
+/* ---------- ASIDE ICON LIST WITH SPECIFIC ICONS ---------- */
+.resource-list {
+  list-style: none;
+  padding-left: 0;
 }
+
+/* Physical Activity and Health */
+.resource-list li:nth-child(1) {
+  background: url("../images/run-icon.png") no-repeat left 4px;
+  padding-left: 32px;
+  margin-bottom: 10px;
+}
+
+/* Stretching Exercises */
+.resource-list li:nth-child(2) {
+  background: url("../images/stretch-icon.png") no-repeat left 4px;
+  padding-left: 32px;
+  margin-bottom: 10px;
+}
+
+/* Strength Training */
+.resource-list li:nth-child(3) {
+  background: url("../images/strength-icon.png") no-repeat left 4px;
+  padding-left: 32px;
+  margin-bottom: 10px;
+}
+
+/* Cardiovascular training */
+.resource-list li:nth-child(4) {
+  background: url("../images/cardio-icon.png") no-repeat left 4px;
+  padding-left: 32px;
+  margin-bottom: 10px;
+}
+
+/* Yoga workout */
+.resource-list li:nth-child(5) {
+  background: url("../images/yoga-icon.png") no-repeat left 4px;
+  padding-left: 32px;
+  margin-bottom: 10px;
+}
+
+/* Links */
+.resource-list a {
+  text-decoration: none;
+  color: steelblue;
+  font-weight: bold;
+}
+
+.resource-list a:hover {
+  color: maroon;
+}
+
 
 .resource-list a {
   text-decoration:none;
