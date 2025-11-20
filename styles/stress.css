@@ -1,175 +1,166 @@
 /* ---------- RESET ---------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fff;
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 3px solid steelblue;
-  box-shadow: 0 0 10px #000;
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:#fff;
+  max-width:900px;
+  margin:20px auto;
+  padding:20px;
+  border:3px solid steelblue;
+  box-shadow:0 0 10px #000;
 }
 
-/* ---------- CUSTOM FONT FOR HEADER TITLE ---------- */
-/* از فونت American Captain که تو fonts/American Captain.ttf هست */
-@font-face {
-  font-family: "American Captain";
-  src: url("../fonts/American Captain.ttf") format("truetype");
+/* ---------- TITLES ---------- */
+.black-title {
+  color:#000;
+}
+
+.maroon-title {
+  color:maroon;
 }
 
 /* ---------- HEADER ---------- */
-header {
-  background: linear-gradient(to bottom, white, lightsteelblue);
-  border-bottom: 3px solid steelblue;
-  padding: 10px 15px;
+@font-face {
+  font-family:"American Captain";
+  src:url("../fonts/American Captain.ttf") format("truetype");
 }
 
-.header-top {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
+header{
+  background:linear-gradient(to bottom, white, lightsteelblue);
+  border-bottom:3px solid steelblue;
+  padding:10px 15px;
 }
 
-.header-top img {
-  max-width: 120px;
-  height: auto;
+.header-top{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  flex-wrap:wrap;
 }
 
-.header-text h1 {
-  font-family: "American Captain", Arial, Helvetica, sans-serif;
-  font-size: 2.5rem;
-  color: steelblue;
-  font-style: italic;
-  text-shadow: 2px 2px 3px #999;
+.header-top img{
+  max-width:120px;
 }
 
-.header-text h2 {
-  font-size: 1rem;
-  color: #333;
+.header-text h1{
+  font-family:"American Captain";
+  font-size:2.6rem;
+  color:steelblue;
+  font-style:italic;
+  text-shadow:2px 2px 3px #999;
 }
-
-/* nav رو از main_2_column.css می‌گیریم، لازم نیست اینجا دوباره تعریفش کنیم */
 
 /* ---------- MAIN LAYOUT ---------- */
-main {
-  display: flex;
-  gap: 20px;
-  margin-top: 20px;
+main{
+  display:flex;
+  gap:20px;
+  margin-top:20px;
 }
 
-section {
-  flex: 2;
+section{
+  flex:2;
 }
 
-aside {
-  flex: 1;
-  border: 3px solid steelblue;
-  border-radius: 10px;
-  padding: 15px;
+aside{
+  flex:1;
+  border:3px solid steelblue;
+  border-radius:10px;
+  padding:15px;
 }
 
-aside h2 {
-  color: maroon;
-  margin-bottom: 10px;
+aside h2{
+  color:maroon;
+  margin-bottom:10px;
 }
 
-/* ---------- FIGURE (تصویر + کپشن) ---------- */
-.stress-figure {
-  float: left;               /* تصویر میاد سمت چپ */
-  margin: 0 20px 10px 0;     /* فاصله از متن */
-  max-width: 40%;
+/* ---------- FIGURE ---------- */
+.stress-figure{
+  float:left;
+  max-width:40%;
+  margin:0 20px 10px 0;
 }
 
-.stress-figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 2px solid steelblue;
+.stress-figure img{
+  width:100%;
+  border:2px solid steelblue;
 }
 
-.stress-figure figcaption {
-  font-size: 0.85rem;
-  font-style: italic;
-  text-align: center;
-  margin-top: 5px;
+.stress-figure figcaption{
+  text-align:center;
+  font-size:0.9rem;
+  font-style:italic;
+  margin-top:5px;
 }
 
-/* ---------- TYPOGRAPHY ---------- */
-h2 {
-  margin: 15px 0 8px;
-  color: steelblue;
+/* خط زیر کپشن */
+.caption-line{
+  width:100%;
+  border:none;
+  border-top:1px solid #666;
+  margin-top:5px;
 }
 
-p {
-  margin-bottom: 10px;
-  line-height: 1.4;
+/* ---------- TEXT ---------- */
+p{
+  margin-bottom:10px;
+  line-height:1.5;
 }
 
-ul {
-  margin-left: 20px;
-  margin-top: 5px;
+.maroon-title{
+  margin-top:20px;
 }
 
-ul li {
-  margin-bottom: 5px;
+/* ---------- BULLET LIST (indent) ---------- */
+.indented-list li{
+  margin-left:20px;
+  padding-left:10px;
 }
 
-/* ---------- ASIDE LINKS + ICONS ---------- */
-
-aside ul {
-  list-style: none;
-  padding-left: 0;
+/* ---------- ASIDE ICON LIST ---------- */
+.resource-list {
+  list-style:none;
+  padding-left:0;
 }
 
-/* 
-   اینجا آیکون قبلِ متن aside.
-   اگر اسم فایل آیکونت چیز دیگه‌ایه (مثلاً stress_icon.png),
-   فقط همون رو جایگزین bullet.png کن.
-*/
-aside li {
-  background: url("../images/bullet.png") no-repeat left 4px;
-  padding-left: 28px;   /* جا برای آیکون */
-  margin-bottom: 8px;
+.resource-list li {
+  background:url("../images/physical.png") no-repeat left 4px;
+  padding-left:32px;
+  margin-bottom:10px;
 }
 
-aside a {
-  color: steelblue;
-  font-weight: bold;
-  text-decoration: none;
+.resource-list a {
+  text-decoration:none;
+  color:steelblue;
+  font-weight:bold;
 }
 
-aside a:hover {
-  color: maroon;
+.resource-list a:hover {
+  color:maroon;
 }
 
 /* ---------- FOOTER ---------- */
-footer {
-  margin-top: 20px;
-  text-align: center;
-  background-color: steelblue;
-  color: white;
-  padding: 10px 0;
-  font-size: 0.9rem;
-  border-radius: 0 0 5px 5px;
-  margin-left: -20px;
-  margin-right: -20px;
+footer{
+  margin-top:20px;
+  text-align:center;
+  background:steelblue;
+  color:white;
+  padding:12px 0;
+  border-radius:0 0 5px 5px;
 }
 
-/* ---------- RESPONSIVE TWEAKS ---------- */
-@media (max-width: 768px) {
-  main {
-    flex-direction: column;
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:768px){
+  main{
+    flex-direction:column;
   }
-
-  .stress-figure {
-    float: none;
-    max-width: 100%;
-    margin: 10px auto;
+  .stress-figure{
+    float:none;
+    margin:auto;
+    max-width:80%;
   }
 }
