@@ -15,8 +15,8 @@ body {
   box-shadow: 0 0 10px #000;
 }
 
-/* ---------- CUSTOM FONT FOR TITLE ---------- */
-/* Rah: fonts/American Captain.ttf */
+/* ---------- CUSTOM FONT FOR HEADER TITLE ---------- */
+/* از فونت American Captain که تو fonts/American Captain.ttf هست */
 @font-face {
   font-family: "American Captain";
   src: url("../fonts/American Captain.ttf") format("truetype");
@@ -33,6 +33,7 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .header-top img {
@@ -48,6 +49,13 @@ header {
   text-shadow: 2px 2px 3px #999;
 }
 
+.header-text h2 {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* nav رو از main_2_column.css می‌گیریم، لازم نیست اینجا دوباره تعریفش کنیم */
+
 /* ---------- MAIN LAYOUT ---------- */
 main {
   display: flex;
@@ -55,12 +63,10 @@ main {
   margin-top: 20px;
 }
 
-/* ghesmat matn */
 section {
   flex: 2;
 }
 
-/* aside */
 aside {
   flex: 1;
   border: 3px solid steelblue;
@@ -73,10 +79,10 @@ aside h2 {
   margin-bottom: 10px;
 }
 
-/* ---------- FIGURE (tasvir + caption) ---------- */
+/* ---------- FIGURE (تصویر + کپشن) ---------- */
 .stress-figure {
-  float: left;                 /* figure biad samte chap */
-  margin: 0 20px 10px 0;       /* fasele az matn */
+  float: left;               /* تصویر میاد سمت چپ */
+  margin: 0 20px 10px 0;     /* فاصله از متن */
   max-width: 40%;
 }
 
@@ -93,9 +99,6 @@ aside h2 {
   text-align: center;
   margin-top: 5px;
 }
-
-/* Ba in ke figure float shode, paragraf ha dor-o-barash mipichan
-   va sari paragraf az bala-ye tasvir shoru mishe (hamoonchi ke taklif mikhad) */
 
 /* ---------- TYPOGRAPHY ---------- */
 h2 {
@@ -118,16 +121,20 @@ ul li {
 }
 
 /* ---------- ASIDE LINKS + ICONS ---------- */
+
 aside ul {
   list-style: none;
   padding-left: 0;
 }
 
-/* INJAAA: esm file icon ro avaz kon be esm vagheii
-   masalan: stress_icon.png ya bullet.png ya ... */
+/* 
+   اینجا آیکون قبلِ متن aside.
+   اگر اسم فایل آیکونت چیز دیگه‌ایه (مثلاً stress_icon.png),
+   فقط همون رو جایگزین bullet.png کن.
+*/
 aside li {
-  background: url("images/stress.jpg") no-repeat left 4px;
-  padding-left: 28px;  /* ja baraye icon */
+  background: url("../images/bullet.png") no-repeat left 4px;
+  padding-left: 28px;   /* جا برای آیکون */
   margin-bottom: 8px;
 }
 
@@ -152,4 +159,17 @@ footer {
   border-radius: 0 0 5px 5px;
   margin-left: -20px;
   margin-right: -20px;
+}
+
+/* ---------- RESPONSIVE TWEAKS ---------- */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .stress-figure {
+    float: none;
+    max-width: 100%;
+    margin: 10px auto;
+  }
 }
