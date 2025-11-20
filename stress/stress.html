@@ -6,6 +6,9 @@
   <title>Stress Relief | Shape Up</title>
 
   <link rel="shortcut icon" href="../images/favicon.ico">
+  <!-- استایل عمومی سایت (همون که برای homepage استفاده می‌کنی) -->
+  <link rel="stylesheet" href="../styles/main_2_column.css">
+  <!-- استایل مخصوص صفحه استرس -->
   <link rel="stylesheet" href="../styles/stress.css">
 </head>
 <body>
@@ -14,9 +17,39 @@
   <div class="header-top">
     <img src="../images/shape_up_logo.png" alt="Shape Up Logo" width="150">
     <div class="header-text">
+      <!-- این تیتر با فونت American Captain نمایش داده می‌شود -->
       <h1>Stress Relief</h1>
+      <h2>Find the best fit for you</h2>
     </div>
   </div>
+
+  <!-- همون navigation مثل صفحه اصلی، فقط با مسیرهای نسبی درست -->
+  <nav class="navbar">
+    <button class="menu-toggle">☰ Menu</button>
+    <ul class="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../strength/strength.html">Strength Training</a></li>
+      <li><a href="../cardio/cardio.html">Cardio Exercises</a></li>
+      <li>
+        <a href="#">Stress Relief ▼</a>
+        <ul class="submenu">
+          <li><a href="stress.html" class="current">What is Stress?</a></li>
+          <li><a href="tips.html">5 Helpful Tips</a></li>
+          <li><a href="meditate.html">Meditation</a></li>
+          <li><a href="vipassana.html">Vipassana</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Healthy Diets ▼</a>
+        <ul class="submenu">
+          <li><a href="#">Why a Healthy Diet?</a></li>
+          <li><a href="#">Plan Your Meals</a></li>
+          <li><a href="#">Count Your Calories</a></li>
+          <li><a href="#">Calculate Your BMI</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </header>
 
 <main>
@@ -26,9 +59,9 @@
 
     <h2>What is stress?</h2>
 
-    <!-- FIGURE ke bayad ezafe beshe -->
+    <!-- FIGURE مطابق تمرین: تصویر + کپشن، هم‌تراز با بالای پاراگراف -->
     <figure class="stress-figure">
-      <img src="../images/stress.jpg" alt="Stress Illustration">
+      <img src="../images/stress.jpg" alt="Managing stress">
       <figcaption>Managing stress is essential for your well-being.</figcaption>
     </figure>
 
@@ -51,10 +84,10 @@
   <aside>
     <h2>More Stress Tips</h2>
     <ul>
-      <li><a href="#">What is Stress?</a></li>
-      <li><a href="#">5 Helpful Tips</a></li>
-      <li><a href="#">Meditation</a></li>
-      <li><a href="#">Vipassana</a></li>
+      <li><a href="stress.html">What is Stress?</a></li>
+      <li><a href="tips.html">5 Helpful Tips</a></li>
+      <li><a href="meditate.html">Meditation</a></li>
+      <li><a href="vipassana.html">Vipassana</a></li>
     </ul>
   </aside>
 </main>
@@ -62,6 +95,13 @@
 <footer>
   <p>&copy; Shape Up!</p>
 </footer>
+
+<script>
+  // Mobile menu toggle (مثل صفحه اصلی)
+  document.querySelector('.menu-toggle').addEventListener('click', () => {
+    document.querySelector('.menu').classList.toggle('open');
+  });
+</script>
 
 </body>
 </html>
