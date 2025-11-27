@@ -1,4 +1,4 @@
-/* -------------- TABLE STYLE FOR LARGE SCREENS -------------- */
+/* -------------- TABLE STYLE (LARGE SCREENS) -------------- */
 
 table {
   width: 100%;
@@ -21,7 +21,7 @@ tbody tr:nth-child(even) {
   background: #f2f2f2;
 }
 
-/* -------------- SMALL SCREEN (RESPONSIVE TABLE) -------------- */
+/* -------------- RESPONSIVE TABLE (SMALL SCREENS) -------------- */
 
 @media (max-width: 700px) {
 
@@ -53,9 +53,55 @@ tbody tr:nth-child(even) {
     margin-bottom: 3px;
   }
 
-  /* Labels for each cell */
   td:nth-child(1)::before { content: "Category"; }
   td:nth-child(2)::before { content: "Food"; }
   td:nth-child(3)::before { content: "Serving Size"; }
   td:nth-child(4)::before { content: "Calories"; }
+
+}
+
+/* ---------- ASIDE ICON LIST (MATCH STRESS PAGE) ---------- */
+
+.resource-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resource-list li {
+  margin-bottom: 10px;
+  padding-left: 32px;
+  background-size: 20px 20px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  line-height: 22px;
+}
+
+.resource-list li:nth-child(1) {
+  background-image: url("../images/run-icon.png");
+}
+
+.resource-list li:nth-child(2) {
+  background-image: url("../images/stretch-icon.png");
+}
+
+.resource-list li:nth-child(3) {
+  background-image: url("../images/strength-icon.png");
+}
+
+.resource-list li:nth-child(4) {
+  background-image: url("../images/cardio-icon.png");
+}
+
+.resource-list li:nth-child(5) {
+  background-image: url("../images/yoga-icon.png");
+}
+
+.resource-list a {
+  text-decoration: none;
+  color: steelblue;
+  font-weight: bold;
+}
+
+.resource-list a:hover {
+  color: maroon;
 }
