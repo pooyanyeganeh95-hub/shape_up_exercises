@@ -1,64 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shape Up! | Calorie Counter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shape Up | Calorie Counter</title>
 
-	<link rel="stylesheet" href="../styles/calories.css">
+  <link rel="shortcut icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="../styles/main_2_column.css">
+  <link rel="stylesheet" href="../styles/calories.css">
 </head>
 
 <body>
-	<main>
-	    <h1>Calorie Counter</h1>
 
-		<table>
-			<thead>
-				<tr>
-					<th>Category</th>
-					<th>Food</th>
-					<th>Serving Size</th>
-					<th>Calories</th>
-				</tr>
-			</thead>
+<header>
+  <div class="header-top">
+    <img src="../images/shape_up_logo.png" alt="Shape Up Logo" width="150">
+    <div class="header-text">
+      <h1>Shape Up!</h1>
+      <h2>Find the best fit for you</h2>
+    </div>
+  </div>
 
-			<tbody>
+  <nav class="navbar">
+    <button class="menu-toggle">☰ Menu</button>
+    <ul class="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../strength/strength.html">Strength Training</a></li>
+      <li><a href="../cardio/cardio.html">Cardio Exercises</a></li>
 
-				<tr><td rowspan="3">Beef</td><td>Frankfurter, Beef</td><td>1 each</td><td>184</td></tr>
-				<tr><td>Ground Beef</td><td>4 oz</td><td>264</td></tr>
-				<tr><td>T-Bone Steak</td><td>8 ounces</td><td>402</td></tr>
+      <li>
+        <a href="#">Stress Relief ▼</a>
+        <ul class="submenu">
+          <li><a href="../stress/stress.html">What is Stress?</a></li>
+          <li><a href="../stress/tips.html">5 Helpful Tips</a></li>
+          <li><a href="#">Meditation</a></li>
+          <li><a href="#">Vipassana</a></li>
+        </ul>
+      </li>
 
-				<tr><td rowspan="3">Bread</td><td>Bagel, plain</td><td>1 bagel</td><td>360</td></tr>
-				<tr><td>Bread, sliced</td><td>1 slice</td><td>60 to 80</td></tr>
-				<tr><td>English Muffin</td><td>1</td><td>135</td></tr>
+      <li>
+        <a href="#">Healthy Diets ▼</a>
+        <ul class="submenu">
+          <li><a href="#">Why a Healthy Diet?</a></li>
+          <li><a href="#">Plan Your Meals</a></li>
+          <li><a href="calories.html" class="current">Count Your Calories</a></li>
+          <li><a href="#">Calculate Your BMI</a></li>
+        </ul>
+      </li>
 
-				<tr><td rowspan="3">Cereal</td><td>Cheerios</td><td>1 cup</td><td>110</td></tr>
-				<tr><td>Corn Flakes</td><td>1 cup</td><td>100</td></tr>
-				<tr><td>Oatmeal, quick</td><td>1 cup cooked</td><td>145</td></tr>
+    </ul>
+  </nav>
+</header>
 
-				<tr><td rowspan="4">Cheese</td><td>American</td><td>1 ounce</td><td>106</td></tr>
-				<tr><td>Swiss</td><td>1 ounce</td><td>100</td></tr>
-				<tr><td>Cheddar</td><td>1 ounce</td><td>114</td></tr>
-				<tr><td>Cottage Cheese, regular</td><td>1/2 cup</td><td>117</td></tr>
+<main>
 
-				<tr><td rowspan="2">Fruit</td><td>Apple</td><td>1 medium</td><td>80</td></tr>
-				<tr><td>Banana</td><td>1</td><td>105</td></tr>
+  <section>
+    <h1>Calorie Counter</h1>
+    <p>This table helps you check the calories for a variety of foods so you can plan your meals more effectively.</p>
 
-				<tr><td rowspan="3">Vegetables</td><td>Corn, fresh</td><td>1 medium ear</td><td>88</td></tr>
-				<tr><td>Carrot, raw</td><td>1 medium</td><td>25</td></tr>
-				<tr><td>Celery</td><td>1 large stalk</td><td>9</td></tr>
+    <!-- THE TABLE -->
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Food</th>
+          <th>Serving Size</th>
+          <th>Calories</th>
+        </tr>
+      </thead>
+      <tbody>
 
-				<tr><td rowspan="7">Miscellaneous</td><td>Milk, whole</td><td>1 cup</td><td>157</td></tr>
-				<tr><td>Eggs</td><td>1</td><td>70</td></tr>
-				<tr><td>Peanut butter</td><td>2 tablespoons</td><td>188</td></tr>
-				<tr><td>Pasta</td><td>1/2 cup dry</td><td>200</td></tr>
-				<tr><td>Rice</td><td>1 cup cooked</td><td>204</td></tr>
-				<tr><td>Canned tuna, in water</td><td>2 ounces</td><td>70</td></tr>
-				<tr><td>Baked potato</td><td>1 medium</td><td>130</td></tr>
+        <tr><td rowspan="3">Beef</td><td>Frankfurter, Beef</td><td>1 each</td><td>184</td></tr>
+        <tr><td>Ground Beef</td><td>4 oz</td><td>264</td></tr>
+        <tr><td>T-Bone Steak</td><td>8 ounces</td><td>402</td></tr>
 
-			</tbody>
-		</table>
+        <tr><td rowspan="3">Bread</td><td>Bagel, plain</td><td>1 bagel</td><td>360</td></tr>
+        <tr><td>Bread, sliced</td><td>1 slice</td><td>60 to 80</td></tr>
+        <tr><td>English Muffin</td><td>1</td><td>135</td></tr>
 
-    </main>
+        <tr><td rowspan="3">Cereal</td><td>Cheerios</td><td>1 cup</td><td>110</td></tr>
+        <tr><td>Corn Flakes</td><td>1 cup</td><td>100</td></tr>
+        <tr><td>Oatmeal, quick</td><td>1 cup cooked</td><td>145</td></tr>
+
+        <tr><td rowspan="4">Cheese</td><td>American</td><td>1 ounce</td><td>106</td></tr>
+        <tr><td>Swiss</td><td>1 ounce</td><td>100</td></tr>
+        <tr><td>Cheddar</td><td>1 ounce</td><td>114</td></tr>
+        <tr><td>Cottage Cheese, regular</td><td>1/2 cup</td><td>117</td></tr>
+
+        <tr><td rowspan="2">Fruit</td><td>Apple</td><td>1 medium</td><td>80</td></tr>
+        <tr><td>Banana</td><td>1</td><td>105</td></tr>
+
+        <tr><td rowspan="3">Vegetables</td><td>Corn, fresh</td><td>1 medium ear</td><td>88</td></tr>
+        <tr><td>Carrot, raw</td><td>1 medium</td><td>25</td></tr>
+        <tr><td>Celery</td><td>1 large stalk</td><td>9</td></tr>
+
+        <tr><td rowspan="7">Miscellaneous</td><td>Milk, whole</td><td>1 cup</td><td>157</td></tr>
+        <tr><td>Eggs</td><td>1</td><td>70</td></tr>
+        <tr><td>Peanut butter</td><td>2 tablespoons</td><td>188</td></tr>
+        <tr><td>Pasta</td><td>1/2 cup dry</td><td>200</td></tr>
+        <tr><td>Rice</td><td>1 cup cooked</td><td>204</td></tr>
+        <tr><td>Canned tuna, in water</td><td>2 ounces</td><td>70</td></tr>
+        <tr><td>Baked potato</td><td>1 medium</td><td>130</td></tr>
+
+      </tbody>
+    </table>
+  </section>
+
+  <aside>
+    <h2>Additional Resources</h2>
+    <ul>
+      <li><a href="https://www.cdc.gov/physical-activity-basics/benefits/index.html">Physical activity and health</a></li>
+      <li><a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/flexibility-exercise-stretching">Stretching exercises</a></li>
+      <li><a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/strength-and-resistance-training-exercise">Strength training</a></li>
+      <li><a href="https://www.health.harvard.edu/exercise-and-fitness/interval-training-for-a-stronger-heart">Cardiovascular training</a></li>
+      <li><a href="https://www.self.com/gallery/power-yoga-workout">Yoga workout</a></li>
+    </ul>
+  </aside>
+
+</main>
+
+<footer>
+  <p>&copy; Shape Up!</p>
+</footer>
+
+<script>
+  document.querySelector('.menu-toggle')
+    .addEventListener('click', () =>
+      document.querySelector('.menu').classList.toggle('open')
+  );
+</script>
+
 </body>
 </html>
