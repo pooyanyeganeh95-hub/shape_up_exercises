@@ -3,116 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meal Plan Order Form</title>
+  <title>Shape Up | Meal Plan</title>
+
+  <link rel="shortcut icon" href="../images/favicon.ico">
   <link rel="stylesheet" href="../styles/main_2_column.css">
   <link rel="stylesheet" href="../styles/forms.css">
 </head>
 <body>
 
 <header>
-  <h1>Meal plan order form</h1>
-  <p>Fill out the form as completely as possible and we will email you a weekly meal plan,
-    customized for you—your lifestyle, your goals, and your personal needs.</p>
-  <p>Asterisks (*) indicate required entries.</p>
+  <div class="header-top">
+    <img src="../images/shape_up_logo.png" alt="Shape Up Logo" width="150">
+    <div class="header-text">
+      <h1>Shape Up!</h1>
+      <h2>Find the best fit for you</h2>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <button class="menu-toggle">☰ Menu</button>
+    <ul class="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../strength/strength.html">Strength Training</a></li>
+      <li><a href="../cardio/cardio.html">Cardio Exercises</a></li>
+      <li>
+        <a href="#">Stress Relief ▼</a>
+        <ul class="submenu">
+          <li><a href="../stress/stress.html">What is Stress?</a></li>
+          <li><a href="../stress/tips.html">5 Helpful Tips</a></li>
+          <li><a href="#">Meditation</a></li>
+          <li><a href="#">Vipassana</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Healthy Diets ▼</a>
+        <ul class="submenu">
+          <li><a href="#">Why a Healthy Diet?</a></li>
+          <li><a href="meals.html" class="current">Plan Your Meals</a></li>
+          <li><a href="#">Count Your Calories</a></li>
+          <li><a href="#">Calculate Your BMI</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </header>
 
 <main>
-  <form action="#" method="post">
 
-    <!-- ===========================
-         1) Tell us about yourself
-    ============================ -->
-    <fieldset>
-      <legend>Tell us about yourself</legend>
+  <!-- ========== LEFT COLUMN: FORM ========== -->
+  <section>
+    <h1>Meal plan order form</h1>
+    <p>Fill out the form as completely as possible and we will email you a weekly meal plan,
+      customized for you—your lifestyle, your goals, and your personal needs.</p>
+    <p><em>Asterisks (*) indicate required entries.</em></p>
 
-      <label>Full name*:
-        <input type="text" name="fullname" required>
-      </label>
+    <form action="#" method="post">
 
-      <label>Email*:
-        <input type="email" name="email" required>
-      </label>
+      <!-- 1) Tell us about yourself -->
+      <fieldset>
+        <legend>Tell us about yourself</legend>
 
-      <label>Gender*:
-        <select name="gender" required>
-          <option value="">Select a gender</option>
-          <option>Male</option>
-          <option>Female</option>
-          <option>Non-Binary</option>
-        </select>
-      </label>
+        <label>Full name*:
+          <input type="text" name="fullname" required>
+        </label>
 
-      <label>Height*:
-        <input type="text" name="height" placeholder="Example: 5ft, 6in" required>
-      </label>
+        <label>Email*:
+          <input type="email" name="email" required>
+        </label>
 
-      <label>Weight*:
-        <input type="text" name="weight" placeholder="Example: 145lbs" required>
-      </label>
+        <label>Gender*:
+          <select name="gender" required>
+            <option value="">Select a gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Non-Binary</option>
+          </select>
+        </label>
 
-      <label>Age group:
-        <select name="age">
-          <option value="">Select your age</option>
-          <option>under 18</option>
-          <option>18 - 34</option>
-          <option>35 - 44</option>
-          <option>50 - 69</option>
-          <option>70+</option>
-        </select>
-      </label>
-    </fieldset>
+        <label>Height*:
+          <input type="text" name="height" placeholder="Example: 5ft, 6in" required>
+        </label>
 
-    <!-- ===========================
-         2) Lifestyle and goals
-    ============================ -->
-    <fieldset>
-      <legend>Lifestyle and goals</legend>
+        <label>Weight*:
+          <input type="text" name="weight" placeholder="Example: 145lbs" required>
+        </label>
 
-      <p>Which currently matches your present lifestyle?</p>
-      <label><input type="radio" name="lifestyle" value="Active" checked> Active</label>
-      <label><input type="radio" name="lifestyle" value="Moderate"> Moderate</label>
-      <label><input type="radio" name="lifestyle" value="Sedentary"> Sedentary</label>
+        <label>Age group:
+          <select name="age">
+            <option value="">Select your age</option>
+            <option>under 18</option>
+            <option>18 - 34</option>
+            <option>35 - 44</option>
+            <option>50 - 69</option>
+            <option>70+</option>
+          </select>
+        </label>
+      </fieldset>
 
-      <p>What are your weight goals?</p>
-      <label><input type="radio" name="goal" value="Gain" checked> Gain</label>
-      <label><input type="radio" name="goal" value="Lose"> Lose</label>
-      <label><input type="radio" name="goal" value="Maintain"> Maintain</label>
-    </fieldset>
+      <!-- 2) Lifestyle and goals -->
+      <fieldset>
+        <legend>Lifestyle and goals</legend>
 
-    <!-- ===========================
-         3) Food preferences
-    ============================ -->
-    <fieldset>
-      <legend>Food preferences and restrictions</legend>
+        <p>Which currently matches your present lifestyle?</p>
+        <label><input type="radio" name="lifestyle" value="Active" checked> Active</label>
+        <label><input type="radio" name="lifestyle" value="Moderate"> Moderate</label>
+        <label><input type="radio" name="lifestyle" value="Sedentary"> Sedentary</label>
 
-      <label><input type="checkbox" name="diet" value="Vegetarian"> Vegetarian</label>
-      <label><input type="checkbox" name="diet" value="Gluten-free"> Gluten-free</label>
-      <label><input type="checkbox" name="diet" value="Kosher"> Kosher</label>
-      <label><input type="checkbox" name="diet" value="Low salt"> Low salt</label>
+        <p>What are your weight goals?</p>
+        <label><input type="radio" name="goal" value="Gain" checked> Gain</label>
+        <label><input type="radio" name="goal" value="Lose"> Lose</label>
+        <label><input type="radio" name="goal" value="Maintain"> Maintain</label>
+      </fieldset>
 
-      <label>
-        <input type="checkbox" id="otherCheck">
-        Other, please explain:
-      </label>
+      <!-- 3) Food preferences -->
+      <fieldset>
+        <legend>Food preferences and restrictions</legend>
 
-      <textarea name="other" rows="4" cols="40"
-                placeholder="Enter any additional restrictions..."></textarea>
-    </fieldset>
+        <label><input type="checkbox" name="diet" value="Vegetarian"> Vegetarian</label>
+        <label><input type="checkbox" name="diet" value="Gluten-free"> Gluten-free</label>
+        <label><input type="checkbox" name="diet" value="Kosher"> Kosher</label>
+        <label><input type="checkbox" name="diet" value="Low salt"> Low salt</label>
 
-    <!-- ===========================
-         4) Buttons
-    ============================ -->
-    <fieldset class="button-group">
-      <button type="submit" class="btn submit-btn">Submit</button>
-      <button type="reset" class="btn reset-btn">Reset</button>
-    </fieldset>
+        <label>
+          <input type="checkbox" id="otherCheck">
+          Other, please explain:
+        </label>
 
-  </form>
+        <textarea name="other" rows="4" cols="40"
+                  placeholder="Enter any additional restrictions..."></textarea>
+      </fieldset>
+
+      <!-- Buttons -->
+      <fieldset class="button-group">
+        <button type="submit" class="btn submit-btn">Submit</button>
+        <button type="reset" class="btn reset-btn">Reset</button>
+      </fieldset>
+
+    </form>
+  </section>
+
+  <!-- ========== RIGHT COLUMN: ASIDE ========== -->
+  <aside>
+    <h2>Additional Resources</h2>
+    <ul>
+      <li><a href="https://www.cdc.gov/physical-activity-basics/benefits/index.html">Physical activity and health</a></li>
+      <li><a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/flexibility-exercise-stretching">Stretching exercises</a></li>
+      <li><a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/strength-and-resistance-training-exercise">Strength training</a></li>
+      <li><a href="https://www.health.harvard.edu/exercise-and-fitness/interval-training-for-a-stronger-heart">Cardiovascular training</a></li>
+      <li><a href="https://www.self.com/gallery/power-yoga-workout">Yoga workout</a></li>
+    </ul>
+  </aside>
+
 </main>
 
 <footer>
   <p>&copy; Shape Up!</p>
 </footer>
+
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', () => {
+    document.querySelector('.menu').classList.toggle('open');
+  });
+</script>
 
 </body>
 </html>
