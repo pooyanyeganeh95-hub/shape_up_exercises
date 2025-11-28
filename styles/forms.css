@@ -1,62 +1,72 @@
-/* ===== FORM PAGE STYLING (Murach Style) ===== */
+/* ====== FORM STYLING: MATCH WORD SCREENSHOT ====== */
 
-form {
-  width: 600px;
+/* خود فرم نسبتاً باریک و چسبیده به سمت چپ ستون باشد */
+section form {
+  width: 580px;        /* شبیه همون عرض تصویر */
   max-width: 100%;
   margin-top: 20px;
+  font-size: 1rem;
 }
 
-fieldset {
-  border: 2px solid #6aa1d0;
-  padding: 12px 15px;
+/* هر گروه مثل یک "جعبه" آبی دورش */
+section fieldset {
+  border: 2px solid #6aa1d0;    /* آبی روشن */
+  padding: 12px 16px;
   margin-bottom: 22px;
   border-radius: 6px;
 }
 
-legend {
+/* عنوان آبی بالای هر کادر */
+section legend {
   font-weight: bold;
   color: #2c6fa3;
   padding: 0 6px;
 }
 
-label {
+/* لیبل‌ها زیر هم، مثل تصویر */
+section label {
   display: block;
   margin-bottom: 10px;
   font-weight: 600;
 }
 
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-  width: 200px;
+/* تکست‌باکس‌ها، سلکت و تکست‌اریا */
+section input[type="text"],
+section input[type="email"],
+section select,
+section textarea {
+  display: block;
+  width: 220px;
   padding: 6px;
   margin-top: 4px;
   border: 1px solid #999;
   border-radius: 4px;
 }
 
-textarea {
-  width: 90%;
-  max-width: 500px;
+/* textarea پهن‌تر مثل عکس */
+section textarea {
+  width: 95%;
+  max-width: 520px;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+/* رادیو و چک‌باکس‌ها کنار متن */
+section input[type="radio"],
+section input[type="checkbox"] {
   width: auto;
   margin-right: 6px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
-p {
-  margin-top: 10px;
-  margin-bottom: 6px;
+/* متن داخل fieldset فاصله شبیه تصویر داشته باشد */
+section fieldset p {
+  margin: 8px 0 4px;
 }
 
-/* ===== BUTTONS ===== */
+/* ====== دکمه‌ها ====== */
 
 .button-group {
-  border: none;
+  border: none;              /* بدون کادر دور دکمه‌ها (مثل Word) */
+  padding-left: 0;
 }
 
 .btn {
@@ -68,15 +78,18 @@ p {
   margin-right: 10px;
 }
 
+/* Submit: آبی */
 .submit-btn {
   background-color: #2c6fa3;
   color: white;
 }
 
+/* Reset: خاکستری روشن */
 .reset-btn {
-  background-color: #ddd;
+  background-color: #dddddd;
 }
 
+/* Hover روی هر دو دکمه */
 .btn:hover {
   background-color: #6aa1d0;
   color: white;
