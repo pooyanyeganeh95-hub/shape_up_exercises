@@ -1,15 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shape Up! | Meal Plan</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Plan Order Form</title>
+  <link rel="stylesheet" href="../styles/main_2_column.css">
+  <link rel="stylesheet" href="../styles/forms.css">
 </head>
-
 <body>
-	<main>
-	    <h1>Meal Plan</h1>
-		<h2>Under Construction</h2>	    
-	</main>
+
+<header>
+  <h1>Meal plan order form</h1>
+  <p>Fill out the form as completely as possible and we will email you a weekly meal plan,
+    customized for you—your lifestyle, your goals, and your personal needs.</p>
+  <p>Asterisks (*) indicate required entries.</p>
+</header>
+
+<main>
+  <form action="#" method="post">
+
+    <!-- ===========================
+         1) Tell us about yourself
+    ============================ -->
+    <fieldset>
+      <legend>Tell us about yourself</legend>
+
+      <label>Full name*:
+        <input type="text" name="fullname" required>
+      </label>
+
+      <label>Email*:
+        <input type="email" name="email" required>
+      </label>
+
+      <label>Gender*:
+        <select name="gender" required>
+          <option value="">Select a gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Non-Binary</option>
+        </select>
+      </label>
+
+      <label>Height*:
+        <input type="text" name="height" placeholder="Example: 5ft, 6in" required>
+      </label>
+
+      <label>Weight*:
+        <input type="text" name="weight" placeholder="Example: 145lbs" required>
+      </label>
+
+      <label>Age group:
+        <select name="age">
+          <option value="">Select your age</option>
+          <option>under 18</option>
+          <option>18 - 34</option>
+          <option>35 - 44</option>
+          <option>50 - 69</option>
+          <option>70+</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <!-- ===========================
+         2) Lifestyle and goals
+    ============================ -->
+    <fieldset>
+      <legend>Lifestyle and goals</legend>
+
+      <p>Which currently matches your present lifestyle?</p>
+      <label><input type="radio" name="lifestyle" value="Active" checked> Active</label>
+      <label><input type="radio" name="lifestyle" value="Moderate"> Moderate</label>
+      <label><input type="radio" name="lifestyle" value="Sedentary"> Sedentary</label>
+
+      <p>What are your weight goals?</p>
+      <label><input type="radio" name="goal" value="Gain" checked> Gain</label>
+      <label><input type="radio" name="goal" value="Lose"> Lose</label>
+      <label><input type="radio" name="goal" value="Maintain"> Maintain</label>
+    </fieldset>
+
+    <!-- ===========================
+         3) Food preferences
+    ============================ -->
+    <fieldset>
+      <legend>Food preferences and restrictions</legend>
+
+      <label><input type="checkbox" name="diet" value="Vegetarian"> Vegetarian</label>
+      <label><input type="checkbox" name="diet" value="Gluten-free"> Gluten-free</label>
+      <label><input type="checkbox" name="diet" value="Kosher"> Kosher</label>
+      <label><input type="checkbox" name="diet" value="Low salt"> Low salt</label>
+
+      <label>
+        <input type="checkbox" id="otherCheck">
+        Other, please explain:
+      </label>
+
+      <textarea name="other" rows="4" cols="40"
+                placeholder="Enter any additional restrictions..."></textarea>
+    </fieldset>
+
+    <!-- ===========================
+         4) Buttons
+    ============================ -->
+    <fieldset class="button-group">
+      <button type="submit" class="btn submit-btn">Submit</button>
+      <button type="reset" class="btn reset-btn">Reset</button>
+    </fieldset>
+
+  </form>
+</main>
+
+<footer>
+  <p>&copy; Shape Up!</p>
+</footer>
+
 </body>
 </html>
