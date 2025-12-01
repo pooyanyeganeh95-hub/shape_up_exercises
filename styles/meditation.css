@@ -1,4 +1,4 @@
-/* Meditation page – custom styling */
+/* Meditation page custom styles */
 
 .med-video {
 	width: 100%;
@@ -9,7 +9,7 @@
 	display: block;
 }
 
-/* audio list styling */
+/* Audio list */
 .audio-list {
 	display: flex;
 	flex-direction: column;
@@ -27,14 +27,49 @@ audio {
 	width: 100%;
 }
 
-/* FIX for aside list icons */
-aside ul {
+
+/* ---------- ASIDE RESOURCE LIST WITH ICONS ---------- */
+
+.resource-list {
 	list-style: none;
 	padding-left: 0;
 }
 
-aside li {
-	background: url("../images/bullet.png") no-repeat left 4px;
-	padding-left: 28px;
-	margin-bottom: 8px;
+.resource-list li {
+	margin-bottom: 10px;
+	padding-left: 32px;
+	background-size: 20px 20px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	line-height: 22px;
+}
+
+.resource-list li:nth-child(1) {
+	background-image: url("../images/run-icon.png");
+}
+
+.resource-list li:nth-child(2) {
+	background-image: url("../images/stretch-icon.png");
+}
+
+.resource-list li:nth-child(3) {
+	background-image: url("../images/strength-icon.png");
+}
+
+.resource-list li:nth-child(4) {
+	background-image: url("../images/cardio-icon.png");
+}
+
+.resource-list li:nth-child(5) {
+	background-image: url("../images/yoga-icon.png");
+}
+
+.resource-list a {
+	text-decoration: none;
+	color: steelblue;
+	font-weight: bold;
+}
+
+.resource-list a:hover {
+	color: maroon;
 }

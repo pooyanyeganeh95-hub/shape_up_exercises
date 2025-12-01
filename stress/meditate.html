@@ -7,11 +7,7 @@
 	<title>Shape Up! | Meditation</title>
 
 	<link rel="shortcut icon" href="../images/favicon.ico">
-
-	<!-- main layout CSS -->
 	<link rel="stylesheet" href="../styles/main_2_column.css">
-
-	<!-- page-only CSS -->
 	<link rel="stylesheet" href="../styles/meditation.css">
 </head>
 
@@ -58,21 +54,19 @@
 
 <main>
 	<section>
+
 		<h1>Meditation</h1>
 
 		<h2>What is Meditation?</h2>
 		<p>
 			Meditation is one path toward transforming the mind. Buddhist meditation practices encourage 
-			and develop concentration, clarity, and emotional positivity. When you begin a meditation practice, 
-			you may learn the patterns and habits of your mind. Meditation offers you a way to cultivate new 
-			and more positive ways to approach the things you do throughout your day. Meditation can have a 
-			transformative effect and can lead to positive changes as well as a new understanding of life.
+			and develop concentration, clarity, and emotional positivity...
 		</p>
 
 		<h2>Video of a woman meditating</h2>
 
 		<video controls class="med-video">
-			<source src="../media/meditation.mp4" type="video/mp4">
+			<source src="../media/meditation.mp3" type="video/mp4">
 			Your browser does not support the video tag.
 		</video>
 
@@ -81,35 +75,52 @@
 		<div class="audio-list">
 
 			<div class="audio-item">
-				<p>Calm Breeze</p>
-				<audio controls>
-					<source src="../media/calm_breeze.mp3" type="audio/mpeg">
+				<p>Ambient Grand Piano</p>
+				<audio controls preload="auto">
+					<source src="../media/ambient_grand_piano.mp3" type="audio/mpeg">
 				</audio>
 			</div>
 
 			<div class="audio-item">
-				<p>Deep Ocean</p>
-				<audio controls>
-					<source src="../media/deep_ocean.mp3" type="audio/mpeg">
+				<p>Piano & Tea</p>
+				<audio controls preload="auto">
+					<source src="../media/piano_and_tea.mp3" type="audio/mpeg">
 				</audio>
 			</div>
 
 			<div class="audio-item">
-				<p>Forest Ambience</p>
-				<audio controls>
-					<source src="../media/forest_ambience.mp3" type="audio/mpeg">
+				<p>Rain & Streams</p>
+				<audio controls preload="auto">
+					<source src="../media/rain_and_streams.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+
+			<div class="audio-item">
+				<p>Soft Piano</p>
+				<audio controls preload="auto">
+					<source src="../media/soft_piano.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+
+			<div class="audio-item">
+				<p>Yoga Ambience</p>
+				<audio controls preload="auto">
+					<source src="../media/yoga.mp3" type="audio/mpeg">
 				</audio>
 			</div>
 
 		</div>
 	</section>
 
+	<!-- FIXED ASIDE WITH ICONS -->
 	<aside>
 		<h2>Additional Resources</h2>
-		<ul>
-			<li><a href="https://www.mindful.org/what-is-mindfulness/">What is Mindfulness?</a></li>
-			<li><a href="https://www.calm.com/">Calm Meditation App</a></li>
-			<li><a href="https://www.headspace.com/">Headspace</a></li>
+		<ul class="resource-list">
+			<li><a href="https://www.cdc.gov/physical-activity-basics/benefits/index.html">Physical activity and health</a></li>
+			<li><a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/flexibility-exercise-stretching">Stretching exercises</a></li>
+			<li><a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/strength-and-resistance-training-exercise">Strength training</a></li>
+			<li><a href="https://www.health.harvard.edu/exercise-and-fitness/interval-training-for-a-stronger-heart">Cardiovascular training</a></li>
+			<li><a href="https://www.self.com/gallery/power-yoga-workout">Yoga workout</a></li>
 		</ul>
 	</aside>
 </main>
@@ -119,9 +130,9 @@
 </footer>
 
 <script>
-	document.querySelector('.menu-toggle').addEventListener('click', () => {
-		document.querySelector('.menu').classList.toggle('open');
-	});
+	document.querySelector('.menu-toggle').addEventListener('click', () =>
+		document.querySelector('.menu').classList.toggle('open')
+	);
 </script>
 
 </body>
