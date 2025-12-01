@@ -6,23 +6,54 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Shape Up! | Meditation</title>
 
-	<!-- Link to meditation-only CSS -->
-	<link rel="stylesheet" href="../styles/meditation.css">
+	<link rel="shortcut icon" href="../images/favicon.ico">
 
-	<!-- Link main layout styles -->
+	<!-- main site layout -->
 	<link rel="stylesheet" href="../styles/main_2_column.css">
+
+	<!-- meditation-only css -->
+	<link rel="stylesheet" href="../styles/meditation.css">
 </head>
 
 <body>
 
 <header>
 	<div class="header-top">
-		<img src="../images/shape_up_logo.png" alt="Shape Up Logo" width="120">
+		<img src="../images/shape_up_logo.png" alt="Shape Up Logo" width="150">
 		<div class="header-text">
 			<h1>Shape Up!</h1>
 			<h2>Find the best fit for you</h2>
 		</div>
 	</div>
+
+	<nav class="navbar">
+		<button class="menu-toggle">☰ Menu</button>
+		<ul class="menu">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../strength/strength.html">Strength Training</a></li>
+			<li><a href="../cardio/cardio.html">Cardio Exercises</a></li>
+
+			<li>
+				<a href="#">Stress Relief ▼</a>
+				<ul class="submenu">
+					<li><a href="stress.html">What is Stress?</a></li>
+					<li><a href="tips.html">5 Helpful Tips</a></li>
+					<li><a class="current" href="meditate.html">Meditation</a></li>
+					<li><a href="#">Vipassana</a></li>
+				</ul>
+			</li>
+
+			<li>
+				<a href="#">Healthy Diets ▼</a>
+				<ul class="submenu">
+					<li><a href="#">Why a Healthy Diet?</a></li>
+					<li><a href="#">Plan Your Meals</a></li>
+					<li><a href="#">Count Your Calories</a></li>
+					<li><a href="#">Calculate Your BMI</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
 </header>
 
 <main>
@@ -40,15 +71,13 @@
 
 		<h2>Video of a woman meditating</h2>
 
-		<!-- ⭐ Meditation Video ⭐ -->
-		<video controls width="100%" class="med-video">
+		<video controls class="med-video">
 			<source src="../media/meditation.mp4" type="video/mp4">
 			Your browser does not support the video tag.
 		</video>
 
 		<h2>Choose your meditation music</h2>
 
-		<!-- ⭐ Meditation Audio Playlist ⭐ -->
 		<div class="audio-list">
 
 			<div class="audio-item">
@@ -88,6 +117,12 @@
 <footer>
 	<p>&copy; Shape Up!</p>
 </footer>
+
+<script>
+	document.querySelector('.menu-toggle').addEventListener('click', () => {
+		document.querySelector('.menu').classList.toggle('open');
+	});
+</script>
 
 </body>
 </html>
