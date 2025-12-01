@@ -1,15 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Shape Up! | Meditation</title>
+
+	<!-- Link to meditation-only CSS -->
+	<link rel="stylesheet" href="../styles/meditation.css">
+
+	<!-- Link main layout styles -->
+	<link rel="stylesheet" href="../styles/main_2_column.css">
 </head>
 
 <body>
-	<main>
-	    <h1>Meditation</h1>
-		<h2>Under Construction</h2>
-	</main>
+
+<header>
+	<div class="header-top">
+		<img src="../images/shape_up_logo.png" alt="Shape Up Logo" width="120">
+		<div class="header-text">
+			<h1>Shape Up!</h1>
+			<h2>Find the best fit for you</h2>
+		</div>
+	</div>
+</header>
+
+<main>
+	<section>
+		<h1>Meditation</h1>
+
+		<h2>What is Meditation?</h2>
+		<p>
+			Meditation is one path toward transforming the mind. Buddhist meditation practices encourage 
+			and develop concentration, clarity, and emotional positivity. When you begin a meditation practice, 
+			you may learn the patterns and habits of your mind. Meditation offers you a way to cultivate new 
+			and more positive ways to approach the things you do throughout your day. Meditation can have a 
+			transformative effect and can lead to positive changes as well as a new understanding of life.
+		</p>
+
+		<h2>Video of a woman meditating</h2>
+
+		<!-- ⭐ Meditation Video ⭐ -->
+		<video controls width="100%" class="med-video">
+			<source src="../media/meditation.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+
+		<h2>Choose your meditation music</h2>
+
+		<!-- ⭐ Meditation Audio Playlist ⭐ -->
+		<div class="audio-list">
+
+			<div class="audio-item">
+				<p>Calm Breeze</p>
+				<audio controls>
+					<source src="../media/calm_breeze.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+
+			<div class="audio-item">
+				<p>Deep Ocean</p>
+				<audio controls>
+					<source src="../media/deep_ocean.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+
+			<div class="audio-item">
+				<p>Forest Ambience</p>
+				<audio controls>
+					<source src="../media/forest_ambience.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+
+		</div>
+	</section>
+
+	<aside>
+		<h2>Additional Resources</h2>
+		<ul>
+			<li><a href="https://www.mindful.org/what-is-mindfulness/">What is Mindfulness?</a></li>
+			<li><a href="https://www.calm.com/">Calm Meditation App</a></li>
+			<li><a href="https://www.headspace.com/">Headspace</a></li>
+		</ul>
+	</aside>
+</main>
+
+<footer>
+	<p>&copy; Shape Up!</p>
+</footer>
+
 </body>
 </html>
