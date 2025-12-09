@@ -5,11 +5,10 @@
     box-sizing: border-box;
 }
 
-/* BODY */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 700px;
-    width: 100%;
+    font-size: 100%;
+    width: 700px;
     margin: 40px auto;
     border: 5px solid steelblue;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
@@ -17,44 +16,51 @@ body {
     background-color: #fff;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
+
 header {
     background: linear-gradient(to bottom, white, lightsteelblue);
     border-bottom: 3px solid steelblue;
-    padding: 20px;
+    padding: 20px 30px;
+    margin: -30px -30px 0 -30px;  /* makes it touch borders */
     display: grid;
-    grid-template-columns: 120px auto;
+    grid-template-columns: 110px auto;
     align-items: center;
     gap: 20px;
 }
 
 header img {
-    width: 120px;
+    width: 110px;
 }
 
 header h1 {
     font-size: 250%;
     color: steelblue;
     font-style: italic;
+    margin-bottom: 5px;
 }
 
 header h2 {
-    font-size: 130%;
-    margin-top: 5px;
+    font-size: 120%;
+    color: black;
+    margin-top: 0;
 }
 
-/* NAVIGATION BAR */
+/* ================= NAV BAR ================= */
+
 nav {
     background-color: steelblue;
-    margin: 0 -30px; 
-    padding: 10px 0;
+    margin: 0 -30px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    justify-content: space-around;
+}
+
+nav li {
+    padding: 10px 0;
 }
 
 nav a {
@@ -67,35 +73,48 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* MAIN CONTENT */
+/* ================= MAIN AREA ================= */
+
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 25px;
+    grid-template-columns: 1fr 250px;
+    gap: 20px;
     margin-top: 20px;
 }
 
-section h1, section h2, section h3 {
+/* ---- Text Section ---- */
+
+section h1 {
+    font-size: 150%;
     margin-bottom: 10px;
+}
+
+section h2 {
+    margin: 15px 0 10px;
 }
 
 section p {
-    line-height: 1.6;
     margin-bottom: 10px;
+    line-height: 1.6;
 }
 
-blockquote {
-    margin: 15px 0;
-    margin-left: 20px;
-    color: #444;
-    font-style: italic;
+/* Purple headings (What we offer items) */
+section h3 a {
+    color: maroon !important;
+    font-weight: bold;
 }
 
-/* ASIDE BOX */
+section h3 a:hover {
+    color: steelblue;
+}
+
+/* ================= ASIDE ================= */
+
 aside {
     border: 3px solid steelblue;
     border-radius: 10px;
     padding: 20px;
+    align-self: start; /* FIX: prevents full page stretching */
 }
 
 aside h2 {
@@ -103,42 +122,115 @@ aside h2 {
     margin-bottom: 15px;
 }
 
-/* ICON LIST */
+/* Aside Icons List */
 .resource-list {
     list-style: none;
-    padding: 0;
+    padding-left: 0;
 }
 
 .resource-list li {
     margin-bottom: 10px;
-    padding-left: 30px;
-    background-size: 20px;
-    background-repeat: no-repeat;
+    padding-left: 32px;
+    background-size: 20px 20px;
     background-position: left center;
+    background-repeat: no-repeat;
+    line-height: 22px;
 }
 
-.resource-list li:nth-child(1) { background-image: url("../images/run-icon.png"); }
-resource-list li:nth-child(2) { background-image: url("../images/stretch-icon.png"); }
-.resource-list li:nth-child(3) { background-image: url("../images/strength-icon.png"); }
-.resource-list li:nth-child(4) { background-image: url("../images/cardio-icon.png"); }
-.resource-list li:nth-child(5) { background-image: url("../images/yoga-icon.png"); }
+.resource-list li:nth-child(1) {
+    background-image: url("../images/run-icon.png");
+}
+resource-list li:nth-child(2) {
+    background-image: url("../images/stretch-icon.png");
+}
+.resource-list li:nth-child(3) {
+    background-image: url("../images/strength-icon.png");
+}
+.resource-list li:nth-child(4) {
+    background-image: url("../images/cardio-icon.png");
+}
+.resource-list li:nth-child(5) {
+    background-image: url("../images/yoga-icon.png");
+}
 
 .resource-list a {
+    text-decoration: none;
     color: steelblue;
     font-weight: bold;
-    text-decoration: none;
 }
 
 .resource-list a:hover {
     color: maroon;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
+
 footer {
-    background-color: steelblue;
-    color: white;
     font-size: 75%;
     text-align: center;
+    background-color: steelblue;
+    color: white;
     padding: 15px;
-    margin: 30px -30px -30px -30px;
+    margin: 0 -30px -30px -30px;
+}
+
+/* ================= TABLE STYLE ================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #777;
+}
+
+th {
+    background: lightsteelblue;
+    color: black;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* ============ RESPONSIVE TABLE (SMALL SCREENS) ============ */
+
+@media (max-width: 700px) {
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 2px solid steelblue;
+        border-radius: 10px;
+        background: #fafafa;
+    }
+
+    td {
+        border: none;
+        padding: 8px 0;
+    }
+
+    td::before {
+        font-weight: bold;
+        color: steelblue;
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    td:nth-child(1)::before { content: "Category"; }
+    td:nth-child(2)::before { content: "Food"; }
+    td:nth-child(3)::before { content: "Serving Size"; }
+    td:nth-child(4)::before { content: "Calories"; }
 }
