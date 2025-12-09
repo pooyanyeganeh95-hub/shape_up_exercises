@@ -1,233 +1,144 @@
 /* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-/* BODY */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    width: 700px;
-    margin: 40px auto;
-    border: 5px solid steelblue;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    background-color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 700px;
+	margin: 40px auto;
+	border: 5px solid steelblue;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+	padding: 30px;
+	background: #fff;
 }
 
 /* HEADER */
 header {
-    background: linear-gradient(to bottom, white, lightsteelblue);
-    border-bottom: 3px solid steelblue;
-    padding: 10px 0;
-    margin-bottom: 0;
-    width: calc(100% + 60px);
-    margin-left: -30px;
+	background: linear-gradient(to bottom, white, lightsteelblue);
+	border-bottom: 3px solid steelblue;
+	padding: 15px;
+	text-align: center;
 }
 
 header img {
-    float: left;
-    margin-right: 15px;
-    max-height: 100px;
+	width: 120px;
+	display: block;
+	margin: 0 auto 10px auto;
 }
 
 header h1 {
-    font-size: 250%;
-    color: steelblue;
-    font-style: italic;
+	font-size: 250%;
+	color: steelblue;
+	font-style: italic;
 }
 
 header h2 {
-    font-size: 120%;
+	font-size: 130%;
 }
 
-/* -------- GRID LAYOUT FOR MAIN -------- */
+/* NAVIGATION */
+nav ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	background: steelblue;
+	padding: 10px;
+	border-radius: 6px;
+	margin-bottom: 20px;
+}
 
+nav li {
+	margin: 0 12px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+/* GRID LAYOUT */
 main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 25px;
-    margin-top: 20px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 20px;
 }
 
 /* SECTION */
 section h1, section h2, section h3 {
-    margin-top: 15px;
-    margin-bottom: 10px;
+	margin: 15px 0 8px 0;
 }
 
 section p {
-    margin-bottom: 10px;
-    line-height: 1.6;
+	margin-bottom: 10px;
+	line-height: 1.6;
 }
 
-section a {
-    font-weight: bold;
+blockquote {
+	margin-left: 20px;
+	font-style: italic;
+	color: #444;
 }
 
-section a:link,
-section a:visited {
-    color: maroon;
-}
-
-section a:hover,
-section a:focus {
-    color: steelblue;
-}
-
-/* ASIDE BOX */
+/* ASIDE */
 aside {
-    border: 3px solid steelblue;
-    border-radius: 10px;
-    padding: 20px;
-    height: fit-content;
+	border: 3px solid steelblue;
+	border-radius: 10px;
+	padding: 15px;
+	height: fit-content;
 }
 
 aside h2 {
-    color: maroon;
-    margin-bottom: 15px;
+	color: maroon;
+	margin-bottom: 10px;
 }
 
-/* ---------- ASIDE ICON LIST ---------- */
-
+/* RESOURCE LIST WITH ICONS */
 .resource-list {
-    list-style: none;
-    padding-left: 0;
+	list-style: none;
+	padding-left: 0;
 }
 
 .resource-list li {
-    margin-bottom: 12px;
-    padding-left: 32px;
-    background-size: 22px 22px;
-    background-position: 0 3px;
-    background-repeat: no-repeat;
-    line-height: 22px;
+	margin-bottom: 10px;
+	padding-left: 32px;
+	background-size: 20px 20px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	line-height: 22px;
 }
 
-.resource-list li:nth-child(1) {
-    background-image: url("../images/run-icon.png");
-}
-
-resource-list li:nth-child(2) {
-    background-image: url("../images/stretch-icon.png");
-}
-
-.resource-list li:nth-child(3) {
-    background-image: url("../images/strength-icon.png");
-}
-
-.resource-list li:nth-child(4) {
-    background-image: url("../images/cardio-icon.png");
-}
-
-.resource-list li:nth-child(5) {
-    background-image: url("../images/yoga-icon.png");
-}
+.resource-list li:nth-child(1) { background-image: url("../images/run-icon.png"); }
+.resource-list li:nth-child(2) { background-image: url("../images/stretch-icon.png"); }
+.resource-list li:nth-child(3) { background-image: url("../images/strength-icon.png"); }
+.resource-list li:nth-child(4) { background-image: url("../images/cardio-icon.png"); }
+.resource-list li:nth-child(5) { background-image: url("../images/yoga-icon.png"); }
 
 .resource-list a {
-    text-decoration: none;
-    color: steelblue;
-    font-weight: bold;
+	color: steelblue;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 .resource-list a:hover {
-    color: maroon;
+	color: maroon;
 }
 
 /* FOOTER */
 footer {
-    font-size: 75%;
-    text-align: center;
-    background-color: steelblue;
-    color: white;
-    padding: 15px;
-    width: calc(100% + 60px);
-    margin-left: -30px;
-    margin-top: 30px;
-}
-
-/* ---------- RESPONSIVE GRID ---------- */
-
-@media (max-width: 700px) {
-    body {
-        width: 95%;
-        padding: 15px;
-        margin: 20px auto;
-    }
-
-    main {
-        grid-template-columns: 1fr;
-    }
-
-    aside {
-        order: -1;
-    }
-
-    header img {
-        float: none;
-        display: block;
-        margin: 0 auto 10px;
-    }
-
-    header {
-        text-align: center;
-    }
-}
-
-/* ---------- RESPONSIVE TABLE (YOU REQUESTED) ---------- */
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-}
-
-th, td {
-    padding: 10px;
-    border: 1px solid #777;
-}
-
-th {
-    background: lightsteelblue;
-    font-weight: bold;
-}
-
-tbody tr:nth-child(even) {
-    background: #f2f2f2;
-}
-
-@media (max-width: 700px) {
-
-  table, thead, tbody, th, td, tr {
-    display: block;
-  }
-
-  thead { display: none; }
-
-  tr {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 2px solid steelblue;
-    border-radius: 10px;
-    background: #fafafa;
-  }
-
-  td {
-    border: none;
-    padding: 8px 0;
-  }
-
-  td::before {
-    font-weight: bold;
-    color: steelblue;
-    display: block;
-    margin-bottom: 3px;
-  }
-
-  td:nth-child(1)::before { content: "Category"; }
-  td:nth-child(2)::before { content: "Food"; }
-  td:nth-child(3)::before { content: "Serving Size"; }
-  td:nth-child(4)::before { content: "Calories"; }
+	margin-top: 20px;
+	text-align: center;
+	background: steelblue;
+	color: white;
+	padding: 15px;
+	margin-left: -30px;
+	margin-right: -30px;
+	margin-bottom: -30px;
 }
